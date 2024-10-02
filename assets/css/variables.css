@@ -1,8 +1,23 @@
-
-
 :root{
     /* colores */
     --colorPrincipal: rgba();
     --colorSecundario: rgba();
-    --colorFondo:rgb(255, 240, 209);
+
+    --color1Fondo:rgb(255, 240, 209);
+    --color2Fondo: rgb(216, 210, 194);
+    --color3Fondo: rgb(236, 223, 204);
+
+
+    --color1Texto: rgb(24, 28, 20);
+    --color2Texto: rgb(105, 117, 101);
+    --color3Texto:rgb(216, 210, 194);
+    
+    --colorA:rgb(105, 117, 101);
+    --colorB:rgb(177, 116, 87);
+    --colorC:rgb(121, 87, 87);
+
+    --color1Boton:rgb(108, 190, 199) ;
+    --color2Boton: rgb(129, 218, 227);
+    --color3Boton:rgb(101, 69, 32) ;
+
 }
