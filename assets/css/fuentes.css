@@ -1,0 +1,61 @@
+/* Charmonman */
+@font-face {
+    font-family: 'Charmonman-Bold';
+    src: url(../fuentes/Charmonman-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Charmonman-Regular';
+    src: url(../fuentes/Charmonman-Regular.ttf);
+    font-weight:normal;
+    font-style:normal;
+}
+/* CinzelDecorative */
+@font-face {
+    font-family: 'CinzelDecorative-Black';
+    src: url(../fuentes/CinzelDecorative-Black.ttf);
+    font-weight:bolder;
+    font-style:bolder;
+}
+@font-face {
+    font-family: 'CinzelDecorative-Bold';
+    src: url(../fuentes/CinzelDecorative-Bold.ttf);
+    font-weight:bold;
+    font-style:bold;
+}
+@font-face {
+    font-family: 'CinzelDecorative-Regular';
+    src: url(../fuentes/CinzelDecorative-Regular.ttf);
+    font-weight:normal;
+    font-style:normal;
+}
+/* MarkOne */
+@font-face {
+    font-family: 'MarkOne-Regular';
+    src: url(../fuentes/MarkoOne-Regular.ttf);
+    font-weight:normal;
+    font-style:normal;
+}
+/* PoetsenOne-Regular */
+@font-face {
+    font-family: 'PoetsenOne-Regular';
+    src: url(../fuentes/PoetsenOne-Regular.ttf);
+    font-weight:normal;
+    font-style:normal;
+}
+/* Sancreek-Regular */
+@font-face {
+    font-family: 'Sancreek-Regular';
+    src: url(../fuentes/Sancreek-Regular.ttf);
+    font-weight:normal;
+    font-style:normal;
+}
+/* Milonga */
+@font-face {
+    font-family: 'Milonga';
+    src: url(../fuentes/Milonga-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
