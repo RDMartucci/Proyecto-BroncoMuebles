@@ -1,0 +1,10 @@
+/* Carga los archivos CSS necesarios */
+
+@import url("./assets/css/variables.css");
+@import url("./assets/css/clases.css");
+@import url("./assets/css/fuentes.css");
+@import url("./assets/css/background.css");
+@import url("./assets/css/header.css");
+@import url("./assets/css/menu.css");
+@import url("./assets/css/secciones.css");
+@import url("./assets/css/footer.css");
