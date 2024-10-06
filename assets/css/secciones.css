@@ -2,3 +2,12 @@ body{
     background-color: var(--colorFondo);
     font-family: var(--fuente1);
 }
+
+header,
+footer{
+    width: 100%;
+    background-color: var(--color3Fondo);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
