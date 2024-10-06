@@ -1,0 +1,94 @@
+/* Estilos generales */
+.header-contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+
+.div-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#div-logo {
+    font-size: 24px;
+}
+
+.div-hamburguesa {
+    display: none;
+    cursor: pointer;
+}
+
+.div-menu-top-contenedor, .div-header-base {
+    display: none; /* Ocultamos inicialmente */
+}
+
+/* Media Queries */
+
+/* Hasta 320px (mobile) */
+@media (max-width: 320px) {
+    .div-hamburguesa {
+        display: block; /* Mostramos el menú hamburguesa */
+    }
+
+    #menu-mobile, #nav-menu {
+        display: none;
+    }
+
+    /* Mostramos el menú al hacer click en el ícono */
+    .menu-activo #menu-mobile {
+        display: block;
+        flex-direction: column;
+    }
+}
+
+/* Hasta 768px (tablet) */
+@media (min-width: 321px) and (max-width: 768px) {
+    .div-hamburguesa {
+        display: block;
+    }
+
+    /* Logo, formulario de búsqueda y login visibles */
+    .div-header-top {
+        justify-content: space-between;
+    }
+
+    #menu-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ul-login, .div-carrito, .form-buscar {
+        display: inline-block;
+    }
+}
+
+/* Hasta 1024px (pantallas medianas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .div-hamburguesa {
+        display: none;
+    }
+
+    .div-menu-top-contenedor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ul-menu-top, .ul-login, .div-carrito {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Desde 1025px en adelante (desktop) */
+@media (min-width: 1025px) {
+    .div-menu-top-contenedor, .div-header-base {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

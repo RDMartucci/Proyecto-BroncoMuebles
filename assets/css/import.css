@@ -1,8 +1,8 @@
 /* Carga los archivos CSS necesarios */
 
 @import url("./variables.css");
-@import url("./clases.css");
 @import url("./fuentes.css");
+@import url("./clases.css");
 @import url("./background.css");
 @import url("./header.css");
 @import url("./menu.css");
