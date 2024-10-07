@@ -9,5 +9,4 @@ footer{
     background-color: var(--color3Fondo);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
