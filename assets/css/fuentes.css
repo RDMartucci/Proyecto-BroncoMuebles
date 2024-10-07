@@ -58,4 +58,24 @@
     font-weight: normal;
     font-style: normal;
 }
+/* Oswald */
+@font-face {
+    font-family: 'Oswald';
+    src: url(../fuentes/Oswald-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald-ligth';
+    src: url(../fuentes/Oswald-Light.ttf);
+    font-weight:lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald-Medium';
+    src: url(../fuentes/Oswald-Medium.ttf);
+    font-weight:600;
+    font-style: normal;
+}
+
 

@@ -3,22 +3,34 @@
     --colorPrincipal: rgba();
     --colorSecundario: rgba();
 
-    --color1Fondo:rgb(255, 240, 209);
-    --color2Fondo: rgb(216, 210, 194);
-    --color3Fondo: rgb(221, 158, 76);
-
+    --color1Fondo: rgb(255, 240, 209);
+    --color2Fondo: rgb(216, 216, 194);
+    --color3Fondo: rgb(236, 223, 204);
+    --color4Fondo: rgb(105, 117, 101);
+    --color5Fondo: rgb(121, 87, 87);
+    --color6Fondo: rgb(130, 91, 50);
+    --color7Fondo: rgb(177, 116, 87);
 
     --color1Texto: rgb(24, 28, 20);
     --color2Texto: rgb(105, 117, 101);
     --color3Texto:rgb(143, 56, 6);
-    
+    --color4Texto: rgb(59, 48, 48);
+    --color5Texto: rgb(108, 190, 199);
+    --color6Texto: rgb(74, 73, 71);
+    --color7Texto: rgb(60, 61, 55);
+
     --colorA:rgb(105, 117, 101);
     --colorB:rgb(177, 116, 87);
     --colorC:rgb(121, 87, 87);
 
     --color1Boton:rgb(108, 190, 199) ;
     --color2Boton: rgb(129, 218, 227);
-    --color3Boton:rgb(101, 69, 32) ;
+    --color3Boton:rgb(101, 69, 32);
+    --color4Boton:rgb(177, 116, 87);
+    --color5Boton:rgb(255, 240, 209);
+    --color6Boton:rgb(105, 117, 101);
+    --color7Boton:rgb(74, 73, 71);
+
 
     --fuente1: 'Milonga';
     --fuente2: 'Sancreek';
@@ -26,6 +38,8 @@
     --fuente4: 'Sancreek';
     --fuente5: 'CinzelDecorative';
     --fuente6: 'Charmonman';
+    --fuente7: 'Oswald-ligth';
+    --fuente8: 'Oswald-Medium';
     
 
 }
