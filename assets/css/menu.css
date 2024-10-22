@@ -31,7 +31,8 @@
 /* Hasta 320px (mobile) */
 @media (max-width: 320px) {
     .div-hamburguesa {
-        display: block; /* Mostramos el menú hamburguesa */
+        /* Mostramos el menú hamburguesa */
+        display: block; 
     }
 
     #menu-mobile, #nav-menu {

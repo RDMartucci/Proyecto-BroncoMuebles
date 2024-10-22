@@ -7,6 +7,4 @@ header,
 footer{
     width: 100%;
     background-color: var(--color3Fondo);
-    display: flex;
-    flex-direction: column;
 }

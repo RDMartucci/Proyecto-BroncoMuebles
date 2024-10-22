@@ -64,11 +64,77 @@
         </article>
         <section>
             <article>
-                <h2>Ubicación del shop</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3637.935368756587!2d-58.442590223720714!3d-35.01272527921455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd2c4020a37461%3A0xbba116302662e4a1!2sR%C3%ADo%20Limay%2C%20B1865%20San%20Vicente%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses!2sar!4v1726496616329!5m2!1ses!2sar"
-                    width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <form action="https://formspree.io/f/mkgwlpjw" method="POST" enctype="multipart/form-data">
+                    <label for="nombre">Nombre:
+                        <input type="text" placeholder="ingrese su nombre" id="nombre" name="nombre" required>
+                    </label>
+                    <br>
+                    <label for="clave">clave:
+                        <input type="password" placeholder="ingrese la clave" id="clave" name="clave" required maxlength="10"
+                            minlength="">
+                    </label>
+                    <br>
+                    <label for="email">email:
+                        <input type="email" placeholder="ingrese el email" id="email" name="email" required maxlength="50" minlength="5">
+                    </label>
+                    <br>
+                    <label for="edad">Edad:
+                        <input type="number" placeholder="ingrese el email" id="edad" name="edad" required max="110" min="10"
+                            value="49">
+                    </label>
+                    <br>
+                    <label for="">Archivo:
+                        <input type="file" name="upload" id="upload">
+                    </label>
+                    <br>
+                    <br>
+                    <p>Radio button</p>
+                    <label for="">PHP
+                        <input type="radio" name="lenguaje" id="" value="PHP">
+                    </label>
+                    <label for="">JAVA
+                        <input type="radio" name="lenguaje" id="" value="JAVA">
+                    </label>
+                    <label for="">PYTHON
+                        <input type="radio" name="lenguaje" id="" value="PYTHON">
+                    </label>
+                    <br>
+                    <br>
+                    <p>Checkbox</p>
+                    <label for="">Mañana
+                        <input type="checkbox" name="manaña" id="">
+                    </label>
+                    <label for="">Tarde
+                        <input type="checkbox" name="tarde" id="">
+                    </label>
+                    <label for="">Noche
+                        <input type="checkbox" name="noche" id="">
+                    </label>
+                    <br>
+                    <br>
+                    <p>Select</p>
+                    <select name="provincia" id="">
+                        <option value="">Seleccione</option>
+                        <option value="1">Buenos Aires</option>
+                        <option value="2">Cordoba</option>
+                        <option value="3">Mendoza</option>
+                        <option value="4">Neuquen</option>
+                    </select>
+                    <select name="provincia2" id="">
+                        <option value="1">Buenos Aires</option>
+                        <option value="2">Cordoba</option>
+                        <option value="3" selected>Mendoza</option>
+                        <option value="4">Neuquen</option>
+                    </select>
+                    <br>            
+                    <br>
+                    <label for="Comentario">Comentario
+                        <textarea name="Comentario" id="Comentario" rows="4" cols="50"></textarea>
+                    </label>
+                    <br>
+                    <button type="submit">Confirmar</button>
+            
+                </form>
             </article>
         </section>
     </main>
