@@ -1,0 +1,21 @@
+@import url('./import.css');
+
+.art-contenedorForm{
+    width: 95%;
+    border: 1px solid var(--color2Fondo);
+    padding: 2em 1em;
+    margin: 0.5vh auto;
+    border-radius: 5px;
+    background-color: var(--color3Fondo);
+    box-shadow: 0px 0px 10px var(--color3Texto);
+    transition: box-shadow 0.3s ease-in-out;
+    
+}
+
+form label{
+    padding: 1vh 0;
+    margin: 1vh 0;
+    padding-bottom: 0.5vh;
+
+}
+
