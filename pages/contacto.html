@@ -41,7 +41,15 @@
                     <i class="fa-solid fa-shopping-cart"></i>
                 </span>
             </div>
-        </div>
+form input[type=text]:focus,
+form input[type=password]:focus,
+form input[type=email]:focus,
+form input[type=number]:focus,
+textarea#Comentario:focus, input[type=text]:focus,
+form input[type=password]:focus,
+form input[type=email]:focus,
+form input[type=number]:focus,
+textarea#Comentario:focus,    </div>
         <div class="div-header-base">
             <nav class="nav-menu-principal">
                 <ul class="ul-menu-principal">
@@ -62,29 +70,13 @@
         <section class="sec-contacto">
             <article class="art-contenedorForm">
                 <form action="https://formspree.io/f/mkgwlpjw" method="POST" enctype="multipart/form-data" class="form-Contacto" id="formContacto">
-                    <label for="nombre">Nombre:
+                    <label for="nombre" class="flex-column ancho-total"><span class="etiqueta">Nombre:</span>
                         <input type="text" placeholder="ingrese su nombre" id="nombre" name="nombre" required>
                     </label>
-                    <br>
-                    <label for="clave">clave:
-                        <input type="password" placeholder="ingrese la clave" id="clave" name="clave" required maxlength="10"
-                            minlength="">
-                    </label>
-                    <br>
-                    <label for="email">email:
+                    <label for="email" class="flex-column ancho-total"><span class="etiqueta">email:</span>
                         <input type="email" placeholder="ingrese el email" id="email" name="email" required maxlength="50" minlength="5">
                     </label>
-                    <br>
-                    <label for="edad">Edad:
-                        <input type="number" placeholder="ingrese el email" id="edad" name="edad" required max="110" min="10"
-                            value="49">
-                    </label>
-                    <br>
-                    <label for="">Archivo:
-                        <input type="file" name="upload" id="upload">
-                    </label>
-                    <br>
-                    <br>
+<!--                     
                     <p>Radio button</p>
                     <label for="">PHP
                         <input type="radio" name="lenguaje" id="" value="PHP">
@@ -95,8 +87,6 @@
                     <label for="">PYTHON
                         <input type="radio" name="lenguaje" id="" value="PYTHON">
                     </label>
-                    <br>
-                    <br>
                     <p>Checkbox</p>
                     <label for="">Mañana
                         <input type="checkbox" name="manaña" id="">
@@ -106,29 +96,19 @@
                     </label>
                     <label for="">Noche
                         <input type="checkbox" name="noche" id="">
+                    </label> -->
+                    <label for="origen-contacto" class="flex-column ancho-total"><span class="etiqueta">Nos conocio a traves de:</span>
+                        <select name="origen-contacto" id="origen-contacto">
+                        <option value="">seleccione</option>
+                        <option value="1">recomendación de amigo y/o conocido</option>
+                        <option value="2">red social</option>
+                        <option value="3">promoción</option>
+                        <option value="4">otro</option>
+                        </select>
                     </label>
-                    <br>
-                    <br>
-                    <p>Select</p>
-                    <select name="provincia" id="">
-                        <option value="">Seleccione</option>
-                        <option value="1">Buenos Aires</option>
-                        <option value="2">Cordoba</option>
-                        <option value="3">Mendoza</option>
-                        <option value="4">Neuquen</option>
-                    </select>
-                    <select name="provincia2" id="">
-                        <option value="1">Buenos Aires</option>
-                        <option value="2">Cordoba</option>
-                        <option value="3" selected>Mendoza</option>
-                        <option value="4">Neuquen</option>
-                    </select>
-                    <br>            
-                    <br>
-                    <label for="Comentario">Comentario
+                    <label for="Comentario" class="flex-column ancho-total"><span class="etiqueta">Comentario</span>
                         <textarea name="Comentario" id="Comentario" rows="4" cols="20"></textarea>
                     </label>
-                    <br>
                     <button type="submit">Confirmar</button>
             
                 </form>
