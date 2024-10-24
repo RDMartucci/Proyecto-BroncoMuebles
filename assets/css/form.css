@@ -16,7 +16,7 @@ form label span.etiqueta{
     font-weight: bold;
     color: var(--color3Texto);
     text-transform: capitalize;
-    padding-left: 2vw;
+    padding: 2vh 0 0 2vw;
 }
 
 
@@ -24,29 +24,17 @@ form input[type=text],
 form input[type=password],
 form input[type=email],
 form input[type=number],
-textarea#Comentario
+textarea#Comentario,
+select,
+button
 {
     padding: 0.5em;
-    border: 2px solid var(--color2Fondo);
+    border: 1px solid var(--color3Texto);
     border-radius: 6vw;
-    background-color: var(--color4Fondo);
-    transition: background-color 0.3s ease-in-out;
-}
-
-form label select{
-    padding: 0.5em;
-    border: 2px solid var(--color2Fondo);
-    border-radius: 6vw;
-    background-color: var(--color4Fondo);
-    transition: background-color 0.3s ease-in-out;
+    background-color: var(--color1Fondo);
+    transition: all 0.3s ease-in-out;
 }
 
 form button{
-    padding: 0.5em 1em;
-    background-color: var(--color1Fondo);
-    color: var(--colorB);
-    border: none;
-    border-radius: 6vw;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+   margin-top: 5vh;
 }
