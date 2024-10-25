@@ -42,5 +42,10 @@
     --fuente7: 'Oswald-ligth';
     --fuente8: 'Oswald-Medium';
     
+      /* FUENTES */
+      --fontsize1: 24px;
+      --fontsize2: 20px;
+      --fontsize3: 16px;
+      --fontsizeXXL: 30px;
 
 }

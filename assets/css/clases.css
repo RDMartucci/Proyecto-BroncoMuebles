@@ -9,7 +9,6 @@
     flex-direction: row;
 }
 
-.flex
 .justify-center{
     justify-content: center;
     justify-items: center;
@@ -18,7 +17,32 @@
 }
 .justify-spBetween{
     justify-content: space-between;
-    /* justify-items: space-between;
-    justify-self: space-between; */
+}
+
+/* ***** Clases generales para el uso común del sitio ***** */
+.centrado-lineal{
+    text-align: center;
+}
+.izq-lineal{
+    text-align: left;
+}
+.der-lineal{
+    text-align: right;
+}
+
+.ancho-total{
+    width: 100%;
+}
+
+h1.titulo-pagina{
+    font-size: var(--fontsizeXXL);
+    color: var(--color1Texto);
+    text-shadow: 1px 1px 0px var(--color3Texto),
+                -1px -1px 0px var(--color3Texto);
+}
+
+h2.subtitulo-pagina{
+    font-size: var(--fontsize2);
+    color: var(--color1Texto);
 }
 
