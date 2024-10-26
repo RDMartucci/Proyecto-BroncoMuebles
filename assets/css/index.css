@@ -72,3 +72,26 @@ a.link-categoria{
         transform: scale(1.05);
     }
 }
+
+
+/* *** medias queries *** */
+@media (min-width: 576px) {
+    section.banner-ofertas-pagos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+   
+}
+
+@media (min-width: 1024px) {
+    section span.texto-banner-ofertas{
+        font-size: var(--fontsize1);
+    }
+}
+
+@media (min-width: 1440px) {
+    section.banner-ofertas-pagos{
+        font-size: var(--fontsizeXXL);
+    }
+}
