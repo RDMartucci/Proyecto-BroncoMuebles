@@ -8,3 +8,7 @@ footer{
     width: 100%;
     background-color: var(--color3Fondo);
 }
+
+section{
+    padding: 1em;
+}

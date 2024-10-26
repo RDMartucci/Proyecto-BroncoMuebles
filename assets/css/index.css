@@ -12,7 +12,6 @@ section.banner-ofertas-pagos{
     transition: box-shadow 0.3s ease-in-out;
     position: relative;
     background-color: var(--color7Fondo);
-    z-index: 1;
 }
 section span.texto-banner-ofertas{
     font-size: var(--fontsize3);
@@ -22,4 +21,53 @@ section span.texto-banner-ofertas{
 .fas{ 
     color: var(--color1Texto);
     margin: 1vw;
+}
+
+section.categorias-destacadas{
+    border-color: var(--color7Fondo);
+    border-radius: 3vw;
+}
+
+ul.ul-menu-categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+li.item-menu-categoria{
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 10px;
+    background-color: var(--color5Fondo);
+    color: var(--color1Texto);
+    text-align: center;
+    width: 30vw;
+}
+
+a.link-categoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color1Texto);
+    transition: color 0.3s ease-in-out;
+    /* height: 15vh; */
+    
+    &:hover{
+        color: var(--color3Texto);
+    }
+    
+
+}
+.img-categoria{
+    width: 100%;
+    border-radius: 5em;
+    background-color: var(--color7Fondo);
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.05);
+    }
 }
