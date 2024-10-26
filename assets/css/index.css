@@ -1,0 +1,25 @@
+@import url('./import.css');
+@import url("./slideshow.css");
+
+section.banner-ofertas-pagos{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vh 1vw;
+    box-shadow: 0px 0px 10px var(--color3Texto);
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+    background-color: var(--color7Fondo);
+    z-index: 1;
+}
+section span.texto-banner-ofertas{
+    font-size: var(--fontsize3);
+    color: var(--color1Fondo);
+    text-shadow: 0px 0px 3px var(--color1Texto);
+}
+.fas{ 
+    color: var(--color1Texto);
+    margin: 1vw;
+}
