@@ -1,8 +1,8 @@
 @import url('./import.css');
 @import url("./slideshow.css");
-
+/* *** seccion banner oe ofertas y pagos *** */
 section.banner-ofertas-pagos{
-    height: 10vh;
+    height: 14vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +14,7 @@ section.banner-ofertas-pagos{
     background-color: var(--color7Fondo);
 }
 section span.texto-banner-ofertas{
-    font-size: var(--fontsize3);
+    font-size: var(--fontsize2);
     color: var(--color1Fondo);
     text-shadow: 0px 0px 3px var(--color1Texto);
 }
@@ -23,6 +23,7 @@ section span.texto-banner-ofertas{
     margin: 1vw;
 }
 
+/* *** Seccion de Categorias *** */
 section.categorias-destacadas{
     border-color: var(--color7Fondo);
     border-radius: 3vw;
@@ -42,7 +43,7 @@ li.item-menu-categoria{
     background-color: var(--color5Fondo);
     color: var(--color1Texto);
     text-align: center;
-    width: 30vw;
+    width: 42vw;
 }
 
 a.link-categoria{
@@ -69,5 +70,28 @@ a.link-categoria{
 
     &:hover{
         transform: scale(1.05);
+    }
+}
+
+
+/* *** medias queries *** */
+@media (min-width: 576px) {
+    section.banner-ofertas-pagos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+   
+}
+
+@media (min-width: 1024px) {
+    section span.texto-banner-ofertas{
+        font-size: var(--fontsize1);
+    }
+}
+
+@media (min-width: 1440px) {
+    section.banner-ofertas-pagos{
+        font-size: var(--fontsizeXXL);
     }
 }
