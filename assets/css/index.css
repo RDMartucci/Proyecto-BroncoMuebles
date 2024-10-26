@@ -54,7 +54,6 @@ a.link-categoria{
     text-decoration: none;
     color: var(--color1Texto);
     transition: color 0.3s ease-in-out;
-    /* height: 15vh; */
     
     &:hover{
         color: var(--color3Texto);
@@ -81,7 +80,6 @@ a.link-categoria{
         flex-direction: row;
         flex-wrap: wrap;
     }
-   
 }
 
 @media (min-width: 1024px) {
