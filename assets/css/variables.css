@@ -7,6 +7,7 @@
     --color2Fondo: rgb(216, 216, 194);
     --color3Fondo: rgb(236, 223, 204);
     --color4Fondo: rgb(105, 117, 101);
+    --color4tFondo: rgba(105, 117, 101,0.3);
     --color5Fondo: rgb(121, 87, 87);
     --color6Fondo: rgb(130, 91, 50);
     --color7Fondo: rgb(177, 116, 87);
@@ -14,7 +15,7 @@
     --color1Texto: rgb(24, 28, 20);
     --color2Texto: rgb(105, 117, 101);
     --color3Texto:rgb(143, 56, 6);
-    --color4Texto: rgb(59, 48, 48);
+    --color4Texto: rgb(245, 230, 230);
     --color5Texto: rgb(108, 190, 199);
     --color6Texto: rgb(74, 73, 71);
     --color7Texto: rgb(60, 61, 55);

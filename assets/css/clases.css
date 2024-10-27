@@ -2,6 +2,7 @@
 .flex-column{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .flex-row{
@@ -46,51 +47,99 @@ h2.subtitulo-pagina{
     color: var(--color1Texto);
 }
 
-/* Cards */
-/* .sec-productos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-} */
+/* *** Cards *** */
 
-.art-productos-destacados{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-}
-
-.card-productos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
-    gap: 1rem;
+.card-contenedor{
+    padding: 1vw;
+    /* background-color: var(--color4Fondo); */
+    /* border-radius: 2rem; */
+    /* transition: background-color 0.3s ease-in-out; */
+    /* box-shadow: 0px 0px 10px var(--color3Texto); */
+    /* cursor: pointer; */
+    
+    flex: 0 1 calc(25% - 1rem);
+    margin-bottom: 1rem;
+    
+    /* &:hover{
+        background-color: var(--color2Fondo);
+    } */
+    
 }
 .card-titulo{
     font-family: var(--fuente1);
-    font-size: var(--fontsize1);
-    color: var(--color1Texto);
+    font-size: var(--fontsize2);
+    color: var(--color5Texto);
     text-align: center;
     text-transform: capitalize;
-    background-color: var(--color4Fondo);
+    margin: 3vh 0px;
+
+
 }
-.card-producto-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: var(--color4Fondo);
-    padding: 1rem;
-    border-radius: 10px;
-    transition: background-color 0.3s ease-in-out;
-    box-shadow: 0px 0px 10px var(--color3Texto);
+.card-contenido{
+    display: grid;
+    grid-template-columns: 4fr;
+}
+
+
+.card-item{
+    padding: 1vw;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 5px var(--color4tFondo);
     cursor: pointer;
+    
+    flex: 0 1 calc(25% - 1rem);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
     
     &:hover{
         background-color: var(--color2Fondo);
+        transition: all 0.3s ease-in-out;
     }
-
 }
-.card-art-nombre{
-    font-family: var(--fuente2);
-    font-size: var(--fontsize2);
 
+.card-item-img{
+    width: 80%;
+    padding: 1vh 4vw;
+    &:hover{
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.card-art-nombre{
+    font-family: var(--fuente8);
+    font-size: var(--fontsize2);
+    text-transform: capitalize;
+}
+
+.card-item-precio{
+    margin: 1vh 0px;
+    font-family: var(--fuente7);
+    font-size: var(--fontsize1);
+    text-transform: uppercase;
+    color: var(--color3Texto);
+}
+.texto-link-carrito{
+    color: var(--color5Texto);
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        color: var(--color4Texto);
+        transition: all 0.5s ease-in-out;
+    }
+}
+.link-agregar-carrito{
+    width: 100%;
+    background-color: var(--color1Texto);
+    color: var(--color5Fondo);
+    border: none;
+    border-radius: 2rem;
+    padding: 1vh 4vw;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        color: var(--color4Texto);
+        transform: scale(1.05);
+        transition: all 0.5s ease-in-out;
+    }
 }
