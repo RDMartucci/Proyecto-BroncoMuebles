@@ -66,11 +66,12 @@ h2.subtitulo-pagina{
     
 }
 .card-titulo{
-    font-family: var(--fuente1);
+    font-family: var(--fuente3);
     font-size: var(--fontsize2);
-    color: var(--color5Texto);
+    color: var(--color2Texto);
     text-align: center;
-    text-transform: capitalize;
+    text-shadow: 1px 1px 1px var(--color1Texto);
+    text-transform: uppercase;
     margin: 3vh 0px;
 
 

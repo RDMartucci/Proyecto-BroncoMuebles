@@ -18,7 +18,7 @@
     --color4Texto: rgb(245, 230, 230);
     --color5Texto: rgb(108, 190, 199);
     --color6Texto: rgb(74, 73, 71);
-    --color7Texto: rgb(60, 61, 55);
+    --color7Texto: rgb(245, 245, 243);
 
     --colorA:rgb(105, 117, 101);
     --colorB:rgb(177, 116, 87);
@@ -35,11 +35,11 @@
 
 /* FUENTES */
     --fuente1: 'Milonga';
-    --fuente2: 'Sancreek';
-    --fuente3: 'PoetsenOne';
-    --fuente4: 'Sancreek';
-    --fuente5: 'CinzelDecorative';
-    --fuente6: 'Charmonman';
+    --fuente2: 'MarkOne-Regular';
+    --fuente3: 'PoetsenOne-Regular';
+    --fuente4: 'Sancreek-Regular';
+    --fuente5: 'CinzelDecorative-Regular';
+    --fuente6: 'Charmonman-Regular';
     --fuente7: 'Oswald-ligth';
     --fuente8: 'Oswald-Medium';
     
