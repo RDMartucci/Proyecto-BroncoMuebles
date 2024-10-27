@@ -54,10 +54,10 @@ a.link-categoria{
     text-decoration: none;
     color: var(--color1Texto);
     transition: color 0.3s ease-in-out;
-    /* height: 15vh; */
     
     &:hover{
         color: var(--color3Texto);
+        transition: color 0.3s ease-in-out;
     }
     
 
@@ -70,18 +70,18 @@ a.link-categoria{
 
     &:hover{
         transform: scale(1.05);
+        transition: color 0.3s ease-in-out;
     }
 }
 
 
 /* *** medias queries *** */
-@media (min-width: 576px) {
+@media (min-width: 600px) {
     section.banner-ofertas-pagos{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-   
 }
 
 @media (min-width: 1024px) {
