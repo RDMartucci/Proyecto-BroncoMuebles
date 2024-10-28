@@ -14,7 +14,7 @@ section.banner-ofertas-pagos{
     background-color: var(--color7Fondo);
 }
 section span.texto-banner-ofertas{
-    font-size: var(--fontsize2);
+    font-size: var(--fontsize3);
     color: var(--color1Fondo);
     text-shadow: 0px 0px 3px var(--color1Texto);
 }
@@ -48,7 +48,7 @@ li.item-menu-categoria{
     border: 1px solid var(--color3Fondo);
     color: var(--color1Texto);
     text-align: center;
-    width: 42vw;
+    max-width: 42vw;
 
 
     &:hover{
@@ -97,6 +97,13 @@ a.link-categoria{
 
 
 /* *** medias queries *** */
+@media (max-widh:575px){
+    .card-contenido{    
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2vw;
+    }
+}
+
 @media (min-width: 600px) {
     section.banner-ofertas-pagos
     {
@@ -104,17 +111,20 @@ a.link-categoria{
         flex-direction: row;
         flex-wrap: wrap;
     }
+    section span.texto-banner-ofertas{
+        font-size: var(--fontsize2);
+    }
     
     ul.ul-menu-categorias{
-        /* display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center; */
-        /* width: 92%; */
         grid-template-columns: 1fr 1fr 1fr;
     }
     li.item-menu-categoria{
-        width: 25vw;
+        max-width: 25vw;
+    }
+
+    .card-contenido{    
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1vw;
     }
 }
 
@@ -125,15 +135,24 @@ a.link-categoria{
     li.item-menu-categoria{
         width: 15vw;
     }
+    span.texto-banner-ofertas{
+        font-size: var(--fontsize1);
+    }
+    .card-contenido{    
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     
 }
 
 @media (min-width: 1025px) {
     section span.texto-banner-ofertas{
-        font-size: var(--fontsize1);
+        font-size: var(--fontsizeXXL);
     }
     ul.ul-menu-categorias{
         display: none;
+    }
+    .card-contenido{    
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
 

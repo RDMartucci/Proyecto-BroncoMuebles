@@ -65,7 +65,7 @@ h2.subtitulo-pagina{
 }
 .card-contenido{
     display: grid;
-    grid-template-columns: 4fr;
+    grid-template-columns: 1fr;
 }
 
 
