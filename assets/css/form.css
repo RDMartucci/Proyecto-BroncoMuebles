@@ -7,7 +7,9 @@
     margin: 0.5vh auto;
     border-radius: 5px;
     background-color: var(--color3Fondo);
-    box-shadow: 0px 0px 10px var(--color3Texto);
+    /* box-shadow: 0px 0px 10px var(--color3Texto); */
+    box-shadow: 0px 0px 5px var(--color4tFondo);
+    
     transition: box-shadow 0.3s ease-in-out;
     
 }
@@ -44,7 +46,7 @@ input[type=password],
 input[type=email],
 input[type=number],
 /* input[type=checkbox], */
-textarea#Comentario,
+textarea,
 select,
 button
 {
@@ -66,4 +68,8 @@ form button{
     margin: 4vh 0 2vh 0;
     background-color: var(--color3Boton);
     color: var(--color1Fondo);
+}
+
+#comentarios{
+    border-radius: 1em;
 }
