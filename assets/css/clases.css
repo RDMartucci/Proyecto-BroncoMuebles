@@ -9,6 +9,36 @@
     flex-direction: row;
 }
 
+.grid1c{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.grid2c{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 1em;
+}
+.grid3c{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 1em;
+}
+.grid4c{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    justify-items: center;
+    gap: 1em;
+}
+.grid5c{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 1em;
+}
 .justify-center{
     justify-content: center;
     justify-items: center;
@@ -50,3 +80,87 @@ h2.subtitulo-pagina{
     color: var(--color1Texto);
 }
 
+/* *** Cards *** */
+.card-contenedor{
+    padding: 1vw;
+    flex: 0 1 calc(25% - 1rem);
+    margin-bottom: 1rem;
+}
+.card-titulo{
+    font-family: var(--fuente2);
+    font-size: var(--fontsize2);
+    color: var(--color7Texto);
+    text-align: center;
+    text-transform: capitalize;
+    margin: 3vh 0px;
+    padding: 2vh 3vw;
+    background-color: var(--color5Fondo);
+}
+.card-contenido{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+.card-item{
+    width: 80%;
+    padding: 1vw;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 5px var(--color4tFondo);
+    cursor: pointer;
+    flex: 0 1 calc(25% - 1rem);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: var(--color2Fondo);
+        transition: all 0.3s ease-in-out;
+    }
+}
+.card-item-img{
+    width: 80%;
+    margin: auto;
+    padding: 1vh 4vw;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+}
+.card-art-nombre{
+    font-family: var(--fuente8);
+    font-size: var(--fontsize2);
+    text-transform: capitalize;
+}
+.card-item-precio{
+    margin: 1vh 0px;
+    font-family: var(--fuente7);
+    font-size: var(--fontsize1);
+    text-transform: uppercase;
+    color: var(--color3Texto);
+}
+.texto-link-carrito{
+    color: var(--color5Texto);
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        color: var(--color4Texto);
+        transition: all 0.5s ease-in-out;
+    }
+}
+.link-agregar-carrito{
+    width: 100%;
+    background-color: var(--color1Texto);
+    color: var(--color5Fondo);
+    border: none;
+    border-radius: 2rem;
+    padding: 1vh 4vw;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        color: var(--color4Texto);
+        transform: scale(1.05);
+        transition: all 0.5s ease-in-out;
+    }
+}
+/* *** */
