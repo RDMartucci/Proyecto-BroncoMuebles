@@ -13,87 +13,77 @@
 </head>
 
 <body>
-    <!-- <header class="header-contenedor">
-        <div class="div-header-top">
-<<<<<<< HEAD
-            <div class="div-logo">
-=======
-            <div id="div-logo">
->>>>>>> b6c5365578cbdc6c5ef204fa7fddf067cc747dbf
-                <a href="../index.html" id="logo-link">
-                    <span id="logo-texto1">BRONCO</span><span id="logo-texto2">MUEBLES</span>
-                </a>
-            </div>
-            <div class="div-menu-top-contenedor">
-                <ul class="ul-menu-top">
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./resenas.html">Reseñas</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <ul class="ul-login">
-                <li><a href="#">Iniciar Sesion</a></li>
-                <li><a href="#">Registrarse</a></li>
-            </ul>
-            <div class="div-carrito">
-                <span>Carrito</span>
-                <span>
-                    <i class="fa-solid fa-shopping-cart"></i>
-                </span>
-            </div>
-form input[type=text]:focus,
-form input[type=password]:focus,
-form input[type=email]:focus,
-form input[type=number]:focus,
-textarea#Comentario:focus, input[type=text]:focus,
-form input[type=password]:focus,
-form input[type=email]:focus,
-form input[type=number]:focus,
-textarea#Comentario:focus,    </div>
-        <div class="div-header-base">
-            <nav class="nav-menu-principal">
-                <ul class="ul-menu-principal">
-                    <li><a href="#">living</a></li>
-                    <li><a href="#">comedor</a></li>
-                    <li><a href="#">cocina</a></li>
-                    <li><a href="#">dormitorio</a></li>
-                    <li><a href="#">oficina</a></li>
-                    <li><a href="#">jardin</a></li>
-                    <li><a href="#">otros</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header> -->
+    <header class="header-contenedor">
+    </header>
     <main class="" id="">
         <h1 class="titulo-pagina centrado-lineal">Contacto</h1>
         <h2 class="subtitulo-pagina centrado-lineal">Envianos tu consulta y así podremos contactarte</h2>
         <section class="sec-contacto">
             <article class="art-contenedorForm">
-                <form action="https://formspree.io/f/mgebzqoj" 
-                        method="POST" 
-                        enctype="multipart/form-data" 
-                        id="form-contacto" 
-                        class="flex-column justify-spBetween">
-                    <label for="nombre" class="flex-column ancho-total"><span class="etiqueta">Nombre:</span>
-                        <input type="text" placeholder="ingrese su nombre" id="nombre" name="nombre" required>
-                    </label>
-                    <label for="email" class="flex-column ancho-total"><span class="etiqueta">email:</span>
-                        <input type="email" placeholder="ingrese el email" id="email" name="email" required minlength="5">
-                    </label>
-                    <label for="origen-contacto" class="flex-column ancho-total"><span class="etiqueta">Nos conocio a traves de:</span>
-                        <select name="origen-contacto" id="origen-contacto">
-                        <option value="">seleccione</option>
-                        <option value="1">recomendación de amigo y/o conocido</option>
-                        <option value="2">red social</option>
-                        <option value="3">promoción</option>
-                        <option value="4">otro</option>
-                        </select>
-                    </label>
-                    <label for="Comentario" class="flex-column ancho-total"><span class="etiqueta">Comentario</span>
-                        <textarea name="Comentario" id="Comentario" rows="4" cols="20"></textarea>
-                    </label>
+                <form action="https://formspree.io/f/mgebzqoj" method="POST" enctype="multipart/form-data"
+                    id="form-contacto" class="flex-column justify-spBetween">
+                    <div class="flex-column justify-center">
+                        <label for="nombre" class="flex-column ancho-total">
+                            <span class="etiqueta">Nombre:</span>
+                            <input type="text" placeholder="Escriba su nombre" id="nombre" name="nombre" required>
+                        </label>
+                    </div>
+                    <div class="flex-column justify-center">
+                        <label for="email" class="flex-column ancho-total">
+                            <span class="etiqueta">email:</span>
+                            <input type="email" placeholder="Escriba el email" id="email" name="email" required
+                                minlength="5">
+                        </label>
+                    </div>
+                    <div class="flex-column justify-center">
+                        <label for="telefono" class="flex-column ancho-total">
+                            <span class="etiqueta">Teléfono de contacto</span>
+                            <input type="number" placeholder="Teléfono para contactarte" id="telefono" name="telefono"
+                                minlength="11">
+                        </label>
+                    </div>
+                    <div class="flex-column justify-center ancho-total">
+                        <span class="etiqueta ancho-total izq-lineal">Preferencia de horarios para poder contactarte</span>
+                            <div class="flex-row justify-spBetween">
+                                <div class="form-item form-sub-item">
+                                    <label for="manaña">
+                                        <span class="etiqueta">Mañana</span>
+                                        <input type="checkbox" name="manaña" id="manaña">
+                                    </label>
+                                </div>
+                                <div class="form-item form-sub-item">
+                                    <label for="tarde">
+                                        <span class="etiqueta">Tarde</span>
+                                        <input type="checkbox" name="tarde" id="tarde">
+                                    </label>
+                                </div>
+                                <div class="form-item form-sub-item">
+                                    <label for="noche">
+                                        <span class="etiqueta">Noche</span>
+                                        <input type="checkbox" name="noche" id="noche">
+                                    </label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="origen-contacto" class="flex-column ancho-total">
+                            <span class="etiqueta">Nos conocio a traves de:</span>
+                            <select name="origen-contacto" id="origen-contacto">
+                                <option value="">seleccione</option>
+                                <option value="1">recomendación de amigo y/o conocido</option>
+                                <option value="2">red social</option>
+                                <option value="3">promoción</option>
+                                <option value="4">otro</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-item">
+                        <label for="Comentario" class="flex-column ancho-total"><span class="etiqueta">Comentario</span>
+                            <textarea name="Comentario" id="Comentario" rows="4" cols="20"></textarea>
+                        </label>
+                    </div>
                     <button type="submit">Confirmar</button>
-            
+
                 </form>
             </article>
         </section>
