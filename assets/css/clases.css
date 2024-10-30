@@ -85,6 +85,7 @@ h2.subtitulo-pagina{
     padding: 1vw;
     flex: 0 1 calc(25% - 1rem);
     margin-bottom: 1rem;
+    overflow: hidden;
 }
 .card-titulo{
     font-family: var(--fuente2);
