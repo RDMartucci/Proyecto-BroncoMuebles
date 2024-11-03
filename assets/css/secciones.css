@@ -1,12 +1,13 @@
 body{
     background-color: var(--colorFondo);
     font-family: var(--fuente7);
+    font-size: var(--fontsize3);
 }
 
 header,
 footer{
     width: 100%;
-    background-color: var(--color3Fondo);
+    background-color: var(--color4Fondo);
 }
 
 section{
