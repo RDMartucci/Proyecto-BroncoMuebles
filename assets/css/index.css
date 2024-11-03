@@ -126,12 +126,12 @@ a.link-categoria{
     }
 
     .card-contenido{    
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         column-gap: 1vw;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     ul.ul-menu-categorias{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
@@ -142,7 +142,7 @@ a.link-categoria{
         font-size: var(--fontsize1);
     }
     .card-contenido{    
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     
 }
@@ -154,13 +154,27 @@ a.link-categoria{
     ul.ul-menu-categorias{
         display: none;
     }
+}
+
+@media (min-width:1200px){
     .card-contenido{    
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .menu-base{
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        width: 100%;
+        height: 7vh;
+        z-index: 10;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
     section.banner-ofertas-pagos{
         font-size: var(--fontsizeXXL);
+    }
+    .card-contenido{    
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
