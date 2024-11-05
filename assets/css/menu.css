@@ -16,23 +16,12 @@ ol, ul {
 }
 /*****/
 
-/* body {
-    font-family: var(--fuente2);
-    font-size: var(--fontsize3);
-} */
-
-/* HEADER */
-/* header {
-    display: flex;
-    flex-direction: column;
-} */
-
 .header-top {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    height: 5vh;
+    height: 9vh;
 }
 
 /* LOGO */
@@ -102,7 +91,7 @@ ol, ul {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    background-color: var(--color2Fondo);
+    background-color: var(--color3Fondo);
     color: var(--color4Texto);
     transition: all 0.3s ease-in-out;
 }
@@ -114,12 +103,12 @@ ol, ul {
 }
 /* menu top */
 .menu-top{
-    top: 6vh;
+    top: 9vh;
     left: 0;
 }
 /* * menu base * */
 .menu-base{
-    top: 27vh;
+    top: 32vh;
     left: 0;
     bottom: 0;
 }
@@ -141,7 +130,9 @@ ol, ul {
 
 /* Estilo de los enlaces */
 .menu-item{
-    
+    &:Hover{
+        background-color: var(--color4tFondo);
+    }
 }
 
 .link-menu {
