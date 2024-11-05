@@ -1,7 +1,7 @@
 @import url('./import.css');
 @import url("./slideshow.css");
 /* *** seccion banner oe ofertas y pagos *** */
-section.banner-ofertas-pagos{
+/* section.banner-ofertas-pagos{
     height: 14vh;
     display: flex;
     align-items: center;
@@ -12,24 +12,24 @@ section.banner-ofertas-pagos{
     transition: box-shadow 0.3s ease-in-out;
     position: relative;
     background-color: var(--color7Fondo);
-}
-section span.texto-banner-ofertas{
+} */
+/* section span.texto-banner-ofertas{
     font-size: var(--fontsize3);
     color: var(--color1Fondo);
     text-shadow: 0px 0px 3px var(--color1Texto);
-}
-.fas{ 
+} */
+/* .fas{ 
     color: var(--color1Texto);
     margin: 1vw;
-}
+} */
 
 /* *** Seccion de Categorias *** */
-section.categorias-destacadas{
+/* section.categorias-destacadas{
     border-color: var(--color7Fondo);
     border-radius: 3vw;
-}
+} */
 
-ul.ul-menu-categorias{
+/* ul.ul-menu-categorias{
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
@@ -37,19 +37,16 @@ ul.ul-menu-categorias{
     padding: 2vw;
     box-shadow: 0px 0px 10px var(--color7Fondo);
     transition: all 0.3s ease-in-out;
-    /* background-color: var(--color7Fondo); */
-    overflow: auto;
-
-    
-}
-li.item-menu-categoria{
+    overflow: auto;    
+} */
+/* li.item-menu-categoria{
     margin: 1vw;
     padding: 1vw;
     border-radius: 0.5em;
     border: 1px solid var(--color3Fondo);
     color: var(--color1Texto);
     text-align: center;
-    max-width: 130px; /*36vw;*/
+    max-width: 130px;
 
 
     &:hover{
@@ -59,9 +56,9 @@ li.item-menu-categoria{
 
         transition: all 0.3s ease-in-out;
     }
-}
+} */
 
-a.link-categoria{
+/* a.link-categoria{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,16 +72,14 @@ a.link-categoria{
         color: var(--color3Texto);
         transition: color 0.3s ease-in-out;
     }
-
-
-}
-.img-categoria{
+} */
+/* .img-categoria{
     width: 100%;
     cursor: pointer;
     border-radius: 10em;
-}
+} */
 
-.texto-link-categoria{
+/* .texto-link-categoria{
     font-size: var(--fontsize2);
     color: var(--color1Texto);
     text-shadow: 0px 0px 3px var(--colorA);
@@ -94,34 +89,34 @@ a.link-categoria{
                     -1px 0px 13px var(--color3Texto);
         transition: all 0.3s ease-in-out;
     }
-}
+} */
 
 
 /* *** medias queries *** */
 @media(min-width:425px) {
-    ul.ul-menu-categorias{
+    .ul-menu-categorias{
         grid-template-columns: 1fr 1fr 1fr;
     }
-    li.item-menu-categoria{
+    .item-menu-categoria{
         max-width: 25vw;
     }
 }
 
 @media (min-width: 576px) {
-    section.banner-ofertas-pagos
+    .banner-ofertas-pagos
     {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    section span.texto-banner-ofertas{
+    .texto-banner-ofertas{
         font-size: var(--fontsize2);
     }
     
-    ul.ul-menu-categorias{
+    .ul-menu-categorias{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    li.item-menu-categoria{
+    .item-menu-categoria{
         max-width: 25vw;
     }
 
@@ -132,13 +127,13 @@ a.link-categoria{
 }
 
 @media (min-width: 900px) {
-    ul.ul-menu-categorias{
+    .ul-menu-categorias{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
-    li.item-menu-categoria{
+    .item-menu-categoria{
         width: 15vw;
     }
-    span.texto-banner-ofertas{
+    .texto-banner-ofertas{
         font-size: var(--fontsize1);
     }
     .card-contenido{    
@@ -148,10 +143,10 @@ a.link-categoria{
 }
 
 @media (min-width: 1025px) {
-    section span.texto-banner-ofertas{
+    .texto-banner-ofertas{
         font-size: var(--fontsizeXXL);
     }
-    ul.ul-menu-categorias{
+    .ul-menu-categorias{
         display: none;
     }
 }
@@ -171,7 +166,7 @@ a.link-categoria{
 }
 
 @media (min-width: 1441px) {
-    section.banner-ofertas-pagos{
+    .banner-ofertas-pagos{
         font-size: var(--fontsizeXXL);
     }
     .card-contenido{    
