@@ -95,7 +95,7 @@
 /* *** medias queries *** */
 @media(min-width:425px) {
     .ul-menu-categorias{
-        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr 1fr; */
     }
     .item-menu-categoria{
         max-width: 25vw;

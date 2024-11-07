@@ -43,6 +43,9 @@
     justify-content: space-between;
 }
 
+.justify-evenly{
+    justify-content: space-evenly;
+}
 /* ***** Clases generales para el uso común del sitio ***** */
 .centrado-lineal{
     text-align: center;
@@ -62,8 +65,9 @@
     padding-left: 0;
 }
 
-h1.titulo-pagina{
-    font-size: var(--fontsizeXXL);
+.titulo-pagina{
+    font-size: var(--fontsize3XL);
+    margin-bottom: 1vh;
     color: var(--color1Texto);
     text-shadow: 1px 1px 0px var(--color3Texto),
                 -1px -1px 0px var(--color3Texto);
@@ -82,11 +86,28 @@ h1.titulo-pagina{
     text-transform: capitalize;
 }
 
+.fas,
+.fa { 
+    color: var(--color1Texto);
+    margin: 1vw;
+}
+
+
 /* linea de subrayado */
 .linea-subrayado{
     width: 8vw;
     height: 3px;
     background-color: var(--color3Texto);
+}
+
+.filtros{
+    width: 90px;
+    height: 30px;
+}
+.cajita{
+    border: 1px solid var(--color1Texto);
+    margin-top: -2vh;
+    margin-bottom: 2vh;
 }
 
 /* ** UBICACION ** */
@@ -100,8 +121,6 @@ h1.titulo-pagina{
     height: 100%;
     border-radius: 2em;
 }
-
-
 
 
 /* *** Cards *** */
@@ -204,15 +223,15 @@ h1.titulo-pagina{
     background-color: var(--color7Fondo);
 }
 /* *** Seccion de Categorias *** */
-categorias-destacadas{
+.categorias-destacadas{
     border-color: var(--color7Fondo);
     border-radius: 3vw;
 }
 
-.ul-menu-categorias{
+.menu-categorias{
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2vw;
     padding: 2vw;
     box-shadow: 0px 0px 10px var(--color7Fondo);
