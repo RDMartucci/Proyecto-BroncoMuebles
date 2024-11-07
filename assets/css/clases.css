@@ -87,7 +87,7 @@
 }
 
 .fas,
-.fa { 
+.fa {
     color: var(--color1Texto);
     margin: 1vw;
 }
@@ -239,7 +239,7 @@
     /* background-color: var(--color7Fondo); */
     overflow: auto;
 
-    
+
 }
 .item-menu-categoria{
     margin: 1vw;
@@ -252,7 +252,7 @@
 
 
     &:hover{
-        
+
         border-color: var(--color2Texto);
         color: var(--color3Texto);
 
@@ -268,7 +268,7 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: color 0.3s ease-in-out;
-    
+
     &:hover{
         border-color: var(--color2Texto);
         color: var(--color3Texto);
@@ -294,6 +294,27 @@
         transition: all 0.3s ease-in-out;
     }
 }
+/* COMENTARIOS / RESEÑAS */
+.img-user{
+    width: 40vw;
+    /* height: 12vh; */
+}
+.texto-comentario{
+
+}
+.card-comentario{
+    /* width: 30vw; */
+    /* height: 40vh; */
+    /* transition: all 0.3s ease-in-out; */
+    /* &:hover{
+        background-color: var(--color2Fondo);
+        transition: all 0.3s ease-in-out;
+    } */
+}
+
+.fa-star{
+    color: var(--color5Texto);
+}
 
 /*  FORMULARIO */
 .art-contenedorForm{
@@ -305,7 +326,7 @@
     background-color: var(--color3Fondo);
     /* box-shadow: 0px 0px 10px var(--color3Texto); */
     box-shadow: 0px 0px 5px var(--color4tFondo);
-    
+
     transition: box-shadow 0.3s ease-in-out;
 
 }
