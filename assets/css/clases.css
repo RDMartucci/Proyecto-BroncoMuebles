@@ -294,3 +294,51 @@
         transition: all 0.3s ease-in-out;
     }
 }
+
+/*  FORMULARIO */
+.art-contenedorForm{
+    width: 95%;
+    border: 1px solid var(--color2Fondo);
+    padding: 1vh 2vw;
+    margin: 0.5vh auto;
+    border-radius: 5px;
+    background-color: var(--color3Fondo);
+    /* box-shadow: 0px 0px 10px var(--color3Texto); */
+    box-shadow: 0px 0px 5px var(--color4tFondo);
+    
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.etiqueta{
+    font-weight: bold;
+    color: var(--color3Texto);
+    text-transform: capitalize;
+    padding: 2vh 0 0 2vw;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0.5vh 0; */
+    /* padding: 1vh 0.5vw; */
+    flex-wrap: wrap;
+    align-content: center;
+}
+.form-sub-item{
+    margin: 0.5vh 0;
+    padding: 1vh 0.5vw;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text] {
+    padding: 0.5em;
+    border: 1px solid var(--color3Texto);
+    border-radius: 6vw;
+    background-color: var(--color1Fondo);
+    transition: all 0.3s ease-in-out;
+}
