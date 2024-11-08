@@ -13,6 +13,12 @@ footer div div h2.tituloh2 {
 .newsletter {
     background-color: var(--color7Fondo);
     color: var(--color1Texto);
+    display: flex;
+    flex-direction: column;
+}
+.news-box{
+    width: 90%;
+    margin: 0 auto;
 }
 
 .form-newsletter {
@@ -87,11 +93,22 @@ footer div div h2.tituloh2 {
     flex-flow: column;
 }
 
-
+/* *** MEDIA QUERIES *** */
 @media (min-width:575px) {
     .footer-base {
         flex-direction: row;
         flex-wrap: wrap;
     }
+}
 
+@media (min-width:900) {
+    .newsletter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .newsletter-texto{
+        width: 50%;
+    }
 }
