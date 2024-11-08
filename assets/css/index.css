@@ -139,6 +139,9 @@
     .card-contenido{    
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .img-user{
+        width: 20vw;
+    }
     
 }
 
@@ -146,7 +149,7 @@
     .texto-banner-ofertas{
         font-size: var(--fontsizeXXL);
     }
-    .ul-menu-categorias{
+    .menu-categorias{
         display: none;
     }
 }
