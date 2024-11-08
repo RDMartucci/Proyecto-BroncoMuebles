@@ -42,9 +42,11 @@
 .justify-spBetween{
     justify-content: space-between;
 }
-
 .justify-evenly{
     justify-content: space-evenly;
+}
+.justify-around{
+    justify-content: space-around;
 }
 /* ***** Clases generales para el uso común del sitio ***** */
 .centrado-lineal{
@@ -236,7 +238,6 @@
     padding: 2vw;
     box-shadow: 0px 0px 10px var(--color7Fondo);
     transition: all 0.3s ease-in-out;
-    /* background-color: var(--color7Fondo); */
     overflow: auto;
 
 
@@ -249,13 +250,9 @@
     color: var(--color1Texto);
     text-align: center;
     max-width: 130px; /*36vw;*/
-
-
     &:hover{
-
         border-color: var(--color2Texto);
         color: var(--color3Texto);
-
         transition: all 0.3s ease-in-out;
     }
 }
@@ -268,7 +265,6 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: color 0.3s ease-in-out;
-
     &:hover{
         border-color: var(--color2Texto);
         color: var(--color3Texto);
@@ -287,7 +283,6 @@
     font-size: var(--fontsize2);
     color: var(--color1Texto);
     text-shadow: 0px 0px 3px var(--colorA);
-
     &:hover{
         text-shadow: 1px 0px 13px var(--color1Texto),
                     -1px 0px 13px var(--color3Texto);
@@ -297,9 +292,6 @@
 /* COMENTARIOS / RESEÑAS */
 .img-user{
     width: 24vw;
-}
-.texto-comentario{
-
 }
 .card-comentario{
     /* width: 30vw; */
@@ -323,9 +315,7 @@
     margin: 0.5vh auto;
     border-radius: 5px;
     background-color: var(--color3Fondo);
-    /* box-shadow: 0px 0px 10px var(--color3Texto); */
     box-shadow: 0px 0px 5px var(--color4tFondo);
-
     transition: box-shadow 0.3s ease-in-out;
 
 }
@@ -342,8 +332,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin: 0.5vh 0; */
-    /* padding: 1vh 0.5vw; */
     flex-wrap: wrap;
     align-content: center;
 }
