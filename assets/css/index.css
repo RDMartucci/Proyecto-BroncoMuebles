@@ -92,19 +92,18 @@
 } */
 
 
-/* *** medias queries *** */
+/* *** MEDIA QUERIES *** */
 @media(min-width:425px) {
-    .ul-menu-categorias{
+    /* .ul-menu-categorias{ */
         /* grid-template-columns: 1fr 1fr 1fr; */
-    }
+    /* } */
     .item-menu-categoria{
         max-width: 25vw;
     }
 }
 
 @media (min-width: 576px) {
-    .banner-ofertas-pagos
-    {
+    .banner-ofertas-pagos{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

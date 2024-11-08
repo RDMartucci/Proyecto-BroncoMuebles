@@ -199,12 +199,10 @@ ol, ul {
 }
 
 @media (min-width:769px) {
-
     .logo-contenedor {
         flex-grow: 1;
         max-width: 300px;
     }
-
     #form-busqueda {
         display: flex;
         width: 50%;
@@ -216,17 +214,13 @@ ol, ul {
     #input-busqueda{
         width: 90%;
     }
-
     #icono-login {
         display: none;
     }
     .div-login{
         flex-basis: 30%;
     }
-
-    .menu-login
-    /* .div-carrito */
-    {
+    .menu-login{
         display: flex;
         flex-direction: row;
         align-content: center;
@@ -283,7 +277,7 @@ ol, ul {
 
     .menu-base{
         position: absolute;
-        top: 5vh;
+        top: 9vh;
         left: 0;
         bottom: 0;
     }
