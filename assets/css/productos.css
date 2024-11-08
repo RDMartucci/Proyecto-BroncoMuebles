@@ -13,3 +13,9 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+@media (min-width:1200px){
+    .main-contenedor{
+        margin-top: 9vh;
+    }
+}

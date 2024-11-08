@@ -10,6 +10,10 @@ footer{
     background-color: var(--color4Fondo);
 }
 
+main{
+    /* margin-top: 10vh; */
+}
+
 section{
     padding: 1em 0px;
 }
