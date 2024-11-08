@@ -41,19 +41,15 @@ footer div div h2.tituloh2 {
 
 /* Redes Sociales */
 .sociales {
-    justify-content: space-around;
     align-items: center;
-    /* height: vh; */
 }
 
 .sociales-item {
     margin: 0.5em;
     padding: 1em;
     border-radius: 1em;
-
     &:hover {
         background-color: var(--color1Texto);
-
     }
 }
 
@@ -78,8 +74,6 @@ footer div div h2.tituloh2 {
 
 .footer-base-item {
     margin: 0.5em;
-    /* width: 50vw; */
-    /* height: 20vh; */
 }
 
 /* NOSOTROS */
@@ -97,7 +91,7 @@ footer div div h2.tituloh2 {
 @media (min-width:575px) {
     .footer-base {
         flex-direction: row;
-        gap: 2em;
+        flex-wrap: wrap;
     }
 
 }
