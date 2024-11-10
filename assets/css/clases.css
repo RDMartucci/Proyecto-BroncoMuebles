@@ -346,3 +346,8 @@ input[type=text] {
     background-color: var(--color1Fondo);
     transition: all 0.3s ease-in-out;
 }
+
+#boton-confirmar{
+    padding: 0.5em;
+    font-size: large;
+}
