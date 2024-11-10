@@ -43,6 +43,10 @@ form button{
     width: 100%;
 }
 
+#comentario{
+    text-indent: 1em;
+}
+
 /* *** MEDIA QUERIES *** */
 @media (min-width: 769px) { 
     #form-contacto{
@@ -54,7 +58,7 @@ form button{
     }
     .eti-contenedor2,
     .eti-contenedor3{
-        width: 50%;
+        width: 48%;
     }
 }
 
@@ -69,6 +73,10 @@ form button{
         width: 100%;
         margin: auto;
     }
+    #boton-confirmar{
+        padding: 1em;
+        /* font-size: large; */
+    }
 }
 
 @media (min-width:1200px) {
@@ -77,5 +85,12 @@ form button{
     }
     #form-contacto{
         margin: 0 auto;
+    }
+    #boton-confirmar{
+        padding: 1.5em;
+        font-size: var(--fontsizeXL);
+    }
+    #comentario{
+        text-indent: 2em;
     }
 }
