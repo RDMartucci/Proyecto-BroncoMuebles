@@ -230,12 +230,12 @@
     position: relative;
     background-color: var(--color7Fondo);
 }
+
 /* *** Seccion de Categorias *** */
 .categorias-destacadas{
     border-color: var(--color7Fondo);
     border-radius: 3vw;
 }
-
 .menu-categorias{
     display: grid;
     justify-items: center;
@@ -245,8 +245,6 @@
     box-shadow: 0px 0px 10px var(--color7Fondo);
     transition: all 0.3s ease-in-out;
     overflow: auto;
-
-
 }
 .item-menu-categoria{
     margin: 1vw;
@@ -262,7 +260,6 @@
         transition: all 0.3s ease-in-out;
     }
 }
-
 .link-categoria{
     display: flex;
     flex-direction: column;
@@ -276,15 +273,12 @@
         color: var(--color3Texto);
         transition: color 0.3s ease-in-out;
     }
-
-
 }
 .img-categoria{
     width: 100%;
     cursor: pointer;
     border-radius: 10em;
 }
-
 .texto-link-categoria{
     font-size: var(--fontsize2);
     color: var(--color1Texto);
@@ -295,6 +289,7 @@
         transition: all 0.3s ease-in-out;
     }
 }
+
 /* COMENTARIOS / RESEÑAS */
 .img-user{
     width: 24vw;
@@ -310,19 +305,15 @@
     padding: 1vh 2vw;
     margin: 0.5vh auto;
     border-radius: 5px;
-    /* background-color: var(--color3Fondo); */
     box-shadow: 0px 0px 5px var(--color4tFondo);
     transition: box-shadow 0.3s ease-in-out;
-
 }
-
 .etiqueta{
     font-weight: bold;
     color: var(--color3Texto);
     text-transform: capitalize;
     padding: 2vh 0 0 2vw;
 }
-
 .form-item{
     display: flex;
     flex-direction: column;
@@ -338,7 +329,6 @@
     align-items: center;
     justify-content: center;
 }
-
 input[type=text] {
     padding: 0.5em;
     border: 1px solid var(--color3Texto);
@@ -346,7 +336,6 @@ input[type=text] {
     background-color: var(--color1Fondo);
     transition: all 0.3s ease-in-out;
 }
-
 #boton-confirmar{
     padding: 0.5em;
     font-size: large;
