@@ -25,5 +25,10 @@ Cada uno de nuestros productos es elaborado por artesanos locales, quienes ponen
 
 Este sitio web ha sido desarrollado como parte del curso **[Talento Tech]**, que tiene como objetivo enseñar a los estudiantes a crear soluciones web profesionales. A lo largo del curso, hemos aprendido sobre diseño web, desarrollo front-end y back-end.
 
+## Herramientas utilizadas:
+- **HTML5:** Para la estructura semantica y contenido del sitio web.
+- **CSS3:** Para el diseño y la presentación visual. Incluidos el menú, slider y cards.
+No se utilizó JavaScript ni framework para mantener la simplicidad del proyecto. 
+
 
 ## Practica sobre el trabajo final del curso Talento Tech C24225. ##
