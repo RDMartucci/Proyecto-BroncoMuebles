@@ -82,10 +82,10 @@
 }
 
 .news-textoh2{
-    font-size: var(--fontsizeXL);
+    font-size: var(--fontsize1);
 }
 .news-textoh3{
-    font-size: var(--fontsize1);
+    font-size: var(--fontsize2);
 }
 .mayuscula{
     text-transform: uppercase;

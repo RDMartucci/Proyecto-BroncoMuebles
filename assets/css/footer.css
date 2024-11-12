@@ -119,6 +119,12 @@ footer div div h2.tituloh2 {
     .news-box {
         width: 40%;
     }
+    .news-textoh2{
+        font-size: var(--fontsizeXL);
+    }
+    .news-textoh3{
+        font-size: var(--fontsize1);
+    }
     .form-newsletter{
         width: 58%;
     }
