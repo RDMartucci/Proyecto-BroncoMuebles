@@ -220,7 +220,13 @@
     }
 }
 /* *** */
-
+/* ** COMENTARIOS EN INDEX ** */
+.card-comentario{
+    background-color: none;
+    &:hover{
+        background-color: none;
+    }
+}
 /* *** BANNER OFERTAS - PAGOS *** */
 .banner-ofertas-pagos{
     height: 14vh;

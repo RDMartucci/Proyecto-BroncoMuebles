@@ -1,5 +1,6 @@
 @import url('../css/import.css');
 
+
 @media (min-width:576px){
     .card-contenido{    
         grid-template-columns: 1fr 1fr;
