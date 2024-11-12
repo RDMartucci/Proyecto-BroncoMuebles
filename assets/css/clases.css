@@ -119,6 +119,10 @@
 }
 
 /* ** UBICACION ** */
+.sec-ubicacion{
+    width: 90%;
+    margin:0 auto;
+}
 .div-ubicacion{
     width: 80vw;
     height: 30vh;
