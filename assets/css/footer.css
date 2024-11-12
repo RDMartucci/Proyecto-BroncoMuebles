@@ -80,6 +80,7 @@ footer div div h2.tituloh2 {
 
 .footer-base-item {
     margin: 0.5em;
+    width: 100%;
 }
 
 /* NOSOTROS */
@@ -99,9 +100,13 @@ footer div div h2.tituloh2 {
         flex-direction: row;
         flex-wrap: wrap;
     }
+    .footer-base-item {
+        /* margin: 0.5em; */
+        width: 44vw;
+    }
 }
 
-@media (min-width:900) {
+@media (min-width:900px) {
     .newsletter{
         display: flex;
         flex-direction: row;
@@ -110,5 +115,18 @@ footer div div h2.tituloh2 {
     }
     .newsletter-texto{
         width: 50%;
+    }
+    .footer-base-item {
+        /* margin: 0.5em; */
+        width: 23vw;
+    }
+}
+
+@media (min-width:1200px){
+    .tituloh2{
+        font-size: var(--fontsizeXL);
+    }
+    .link-menu-footer{
+        font-size: var(--fontsize1);
     }
 }
