@@ -116,6 +116,12 @@ footer div div h2.tituloh2 {
     .newsletter-texto{
         width: 50%;
     }
+    .news-box {
+        width: 40%;
+    }
+    .form-newsletter{
+        width: 58%;
+    }
     .footer-base-item {
         /* margin: 0.5em; */
         width: 23vw;
