@@ -60,6 +60,7 @@
     .menu-categorias{
         display: none;
     }
+    
 }
 
 @media (min-width:1200px){
@@ -72,6 +73,13 @@
     .card-titulo{
         font-size: var(--fontsize2XL);
     }
+    .img-user {
+        width: 12vw;
+        padding: 1em;
+    }
+    .card-item-img{
+        width: 17vw;
+    }
 }
 
 @media (min-width: 1441px) {
@@ -83,5 +91,8 @@
     }
     .card-titulo{
         font-size: var(--fontsize3XL);
+    }
+    .card-item-img{
+        width: 14vw;
     }
 }
