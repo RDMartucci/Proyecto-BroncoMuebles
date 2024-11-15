@@ -159,7 +159,8 @@
     justify-content: space-around;
     align-content: center;
 }
-.card-item{
+.card-item,
+.card-comentario{
     width: 80%;
     padding: 1vw;
     border-radius: 0.5rem;
@@ -168,20 +169,21 @@
     flex: 0 1 calc(25% - 1rem);
     margin-bottom: 1rem;
     transition: all 0.3s ease-in-out;
-    &:hover{
+}
+.card-item:hover{
         background-color: var(--color2Fondo);
         transition: all 0.3s ease-in-out;
-    }
 }
-.card-item-img{
+.card-item-img,
+.card-comentario-img{
     width: 80%;
     margin: auto;
     padding: 1vh 4vw;
     transition: all 0.5s ease-in-out;
-    &:hover{
-        transform: scale(1.05);
-        transition: all 0.3s ease-in-out;
-    }
+}
+.card-item-img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
 .card-art-nombre{
     font-family: var(--fuente8);
