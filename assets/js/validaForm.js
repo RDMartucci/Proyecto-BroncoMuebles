@@ -1,21 +1,4 @@
-// const formulario = document.getElementById('form-contacto');
-// formulario.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     const nombre = document.getElementById('nombre').value;
-//     const email = document.getElementById('email').value;
-//     const mensaje = document.getElementById('mensaje').value;
-//     const telefono = document.getElementById('telefono').value;
-//     const comentario = document.getElementById('comentario').value;
-    
-//     if (nombre == "" || email == "" || mensaje == "" || comentario == "") {
-//         alert("Por favor, complete todos los campos requeridos");
-//     }
-// }
-
-// Seleccionar el formulario
 const formulario = document.getElementById('form-contacto');
-
-// Agregar evento de submit
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -38,8 +21,8 @@ formulario.addEventListener('submit', (e) => {
     }
 
     // Validar formato del email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
+    const emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailFormat.test(email)) {
         alert("Por favor, ingrese un email válido.");
         return;
     }
@@ -57,6 +40,6 @@ formulario.addEventListener('submit', (e) => {
     }
 
     // Si todas las validaciones son correctas
-    alert("Formulario enviado correctamente.");
+    alert("Formulario completo enviado.");
     formulario.submit(); // Enviar formulario
 });
