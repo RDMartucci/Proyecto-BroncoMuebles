@@ -22,6 +22,17 @@ input[type=checkbox]{
     transition: all 0.3s ease-in-out;
 }
 
+input[type=text]:hover,
+input[type=password]:hover,
+input[type=email]:hover,
+input[type=number]:hover,
+textarea:hover,
+select:hover,
+button:hover{
+    box-shadow: 1px -1px 7px var(--color5Fondo);
+    transition: all 0.3s ease-in-out;
+}
+
 form button{
     margin: 4vh 0 2vh 0;
     background-color: var(--color3Boton);
