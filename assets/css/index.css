@@ -1,5 +1,6 @@
-@import url(https://rdmartucci.github.io/Proyecto-BroncoMuebles/assets/css/import.css);
-@import url(https://rdmartucci.github.io/Proyecto-BroncoMuebles/assets/css/slideshow.css);
+@import url('../css/import.css');
+@import url('../css/slideshow.css');
+
 @media (min-width:425px){
     .item-menu-categoria{
         max-width:25vw}
