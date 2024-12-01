@@ -1,0 +1,23 @@
+@import url('../css/import.css');
+
+
+@media (min-width:576px){
+    .card-contenido{    
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1vw;
+    }
+    .img-user{
+        width: 24vw;
+    }
+
+}
+
+
+@media (min-width:900px) {
+    .card-contenido{    
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .img-user{
+        width: 20vw;
+    }
+}

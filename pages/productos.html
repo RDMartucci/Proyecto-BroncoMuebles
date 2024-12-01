@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/productos.css">
+    <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="icon" href="../assets/img/logo05.ico">
+    <title>Muebleria BroncoMuebles</title>
+</head>
+
+<body>
+    <header class="header-top">
+    <div class="logo-contenedor">
+        <a href="../index.html" id="logo-link">
+            <img src="../assets/img/broncomuebles-logo.png" alt="logo" id="logo-img">
+        </a>
+    </div>
+    <div class="menu-hamburguesa">
+        <!-- Checkbox oculto -->
+        <input type="checkbox" id="menu-toggle">
+        <!-- Icono de hamburguesa -->
+        <label class="menu-hamburguesa-icon" for="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <ul class="ul-menu menu-top capital" id="menu-header-top">
+            <li class="menu-item ancho-total">
+                <a href="#" class="link-menu d-block ancho-total">Productos</a>
+            </li>
+            <li class="menu-item ancho-total">
+                <a href="./comentarios.html" class="link-menu d-block ancho-total">Reseñas</a>
+            </li>
+            <li class="menu-item ancho-total">
+                <a href="./contacto.html" class="link-menu d-block ancho-total">Contacto</a>
+            </li>
+        </ul>
+
+        <nav class="nav-header-base" id="nav-menu-principal">
+            <ul class="ul-menu menu-base capital" id="menu-header-base">
+                <li class="menu-item ancho-total">
+                    <a href="#" class="link-menu d-block ancho-total">living</a>
+                </li>
+                <li class="menu-item ancho-total">
+                    <a href="#" class="link-menu d-block ancho-total">comedor</a>
+                </li>
+                <li class="menu-item ancho-total">
+                    <a href="#" class="link-menu d-block ancho-total">cocina</a>
+                </li>
+                <li class="menu-item ancho-total">
+                    <a href="#" class="link-menu d-block ancho-total">dormitorio</a>
+                </li>
+                <li class="menu-item ancho-total">
+                    <a href="#" class="link-menu d-block ancho-total">oficina</a>
+                </li>
+                <li class="menu-item ancho-total">
+                    <a href="#" class="link-menu d-block ancho-total">jardín</a>
+                </li>
+                <li class="menu-item ancho-total">
+                    <a href="#" class="link-menu d-block ancho-total">otros</a>
+                </li>
+            </ul>
+        </nav>
+
+        <i class="fas fa-search" id="icono-busqueda"></i>
+        <form action="#" class="form-buscar" id="form-busqueda">
+            <input type="text" name="busqueda" id="input-busqueda">
+            <a href="#" id="link-buscar">
+                <i class="fas fa-search"></i>
+            </a>
+        </form>
+        <div class="div-login">
+            <i class="fa-solid fa-users-line" id="icono-login"></i>
+            <ul class="menu-login">
+                <li><a href="#" class="link-menu-login">Iniciar Sesión</a></li>
+                <li><a href="#" class="link-menu-login">Registrarse</a></li>
+            </ul>
+            <div class="div-carrito link-menu-login">
+                <span>
+                    <i class="fa-solid fa-shopping-cart"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main class="main-contenedor">
+        <span class="d-block centrado-lineal">Inicio > Productos</span>
+        <span class="d-block titulo-pagina centrado-lineal">Nuestros Productos</span>
+        <!-- FILTROS PARA LA BUSQUEDA DE PRODUCTOS -->
+        <div class="flex-row justify-evenly">
+            <div class="flex-row filtros">Ordenar
+                <i class="fa fa-arrow-up"></i>
+                <i class="fa fa-arrow-down"></i>
+            </div>
+            <div class="flex-row filtros">Filtrar
+                <i class="fa fa-arrows-left-right-to-line"></i>
+            </div>
+        </div>
+        <section class="sec-productos">
+            <article class="flex-column justify-center productos-destacados">
+                <div class="flex-column  card-contenedor">
+                    <h2 class="card-titulo">productos destacados</h2>
+                    <div class="card-contenido">
+                        <div class="card-item flex-column">
+                            <img class="card-item-img"
+                                src="https://via.assets.so/furniture.png?id=1&q=95&w=250&h=250&fit=fill" alt="mueble">
+                            <div class="card-cuerpo">
+                                <h3 class="card-art-nombre centrado-lineal">Sillón individual Clase A</h3>
+                                <p class="card-descripcion">Sillón individual Clase A, con un diseño
+                                    elegante y sofisticado, ideal para cualquier habitación de la casa.</p>
+                                <h3 class="card-item-precio centrado-lineal">$1.450.000</h3>
+                                <a href="#" class="link-agregar-carrito flex-column centrado-lineal">
+                                    <span class="texto-link-carrito">agregar al carrito</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-item flex-column">
+                            <img class="card-item-img"
+                                src="https://via.assets.so/furniture.png?id=2&q=95&w=250&h=250&fit=fill" alt="mueble">
+                                <div class="card-cuerpo">
+                                    <h3 class="card-art-nombre centrado-lineal">Sillón individual Clase B</h3>
+                                    <p class="card-descripcion">Sillón individual Clase B, con un diseño
+                                        para todo tipo y colores varios.</p>
+                                    <h3 class="card-item-precio centrado-lineal">$800.000</h3>
+                                    <a href="#" class="link-agregar-carrito flex-column centrado-lineal">
+                                        <span class="texto-link-carrito">agregar al carrito</span>
+                                    </a>
+                                </div>
+                        </div>
+                        <div class="card-item flex-column">
+                            <img class="card-item-img"
+                                src="https://via.assets.so/furniture.png?id=3&q=95&w=250&h=250&fit=fill" alt="mueble">
+                                <div class="card-cuerpo">
+                                    <h3 class="card-art-nombre centrado-lineal">Sillón individual Clase C</h3>
+                                    <p class="card-descripcion">Sillón individual Clase C tiene un estilo mas calido y acogedor para pasar un buen rato sentado sin preocuparte por nada.</p>
+                                    <h3 class="card-item-precio centrado-lineal">$1.830.000</h3>
+                                    <a href="#" class="link-agregar-carrito flex-column centrado-lineal">
+                                        <span class="texto-link-carrito">agregar al carrito</span>
+                                    </a>
+                                </div>
+                        </div>
+                        <div class="card-item flex-column">
+                            <img class="card-item-img"
+                                src="https://via.assets.so/furniture.png?id=21&q=95&w=250&h=250&fit=fill" alt="mueble">
+                                <div class="card-cuerpo">
+                                    <h3 class="card-art-nombre centrado-lineal">Silla individual</h3>
+                                    <p class="card-descripcion">Silla de caño reforzada.</p>
+                                    <h3 class="card-item-precio centrado-lineal">$50.000</h3>
+                                    <a href="#" class="link-agregar-carrito flex-column centrado-lineal">
+                                        <span class="texto-link-carrito">agregar al carrito</span>
+                                    </a>
+                                </div>
+                        </div>
+                        <div class="card-item flex-column">
+                            <img class="card-item-img"
+                                src="https://via.assets.so/furniture.png?id=16&q=95&w=250&h=250&fit=fill" alt="mueble">
+                                <div class="card-cuerpo">
+                                    <h3 class="card-art-nombre centrado-lineal">Mesa cuadrada de madera</h3>
+                                    <p class="card-descripcion">Mesa de madera tamaño para 4 personas.</p>
+                                    <h3 class="card-item-precio centrado-lineal">$150.000</h3>
+                                    <a href="#" class="link-agregar-carrito flex-column centrado-lineal">
+                                        <span class="texto-link-carrito">agregar al carrito</span>
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <div class="flex-row justify-center">
+            <div class="filtros cajita centrado-lineal">1</div>
+            <div class="filtros cajita centrado-lineal">2</div>
+            <div class="filtros cajita centrado-lineal">3</div>
+            <div class="filtros cajita centrado-lineal">
+                <i class="fa fa-angle-double-right"></i>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-contenedor flex-column justify-center">
+        <div class="div-footer-top flex-column">
+            <section class="newsletter">
+                <div class="news-box">
+                    <h2 class="news-textoh2 centrado-lineal">Suscribete a nuestro newsletter</h2>
+                    <h3 class="news-textoh3 centrado-lineal">Registrate y recibí nuestras ofertas.</h3>
+                </div>
+                <form action="#" class="flex-row form-newsletter centrado-lineal" id="form-newsletter">
+                    <input type="text" name="correo-newsletter" id="input-correo">
+                    <a href="#" class="link-agregar-carrito link-newsletter" id="link-enviar">
+                        <span class="mayuscula">enviar</span>
+                    </a>
+                </form>
+            </section>
+            <div class="sociales flex-row justify-around">
+                <span class="sociales-item">
+                    <a href="#" class="sociales-link texto-link-carrito">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </span>
+                <span class="sociales-item">
+                    <a href="#" class="sociales-link texto-link-carrito">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </span>
+                <span class="sociales-item">
+                    <a href="" class="sociales-link texto-link-carrito">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a></span>
+                <span class="sociales-item">
+                    <a href="" class="sociales-link texto-link-carrito">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a></span>
+            </div>
+        </div>
+        <div class="footer-base flex-column justify-around">
+            <div class="footer-base-item centrado-lineal">
+                <h2 class="tituloh2 mayuscula fondoOscuro centrado-lineal">BroncoMuebles</h2>
+                <div class="linea-subrayado justify-center"></div>
+                <ul class="flex-column ul-listado">
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">Quienes somos</a>
+                    </li>
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">Trabaja con nosotros</a>
+                    </li>
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">Políticas de privacidad</a>
+                    </li>
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">Términos y condiciones</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-base-item centrado-lineal">
+                <h2 class="tituloh2 mayuscula fondoOscuro centrado-lineal">ayuda</h2>
+                <div class="linea-subrayado justify-center"></div>
+                <ul class="flex-column ul-listado">
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">Cómo comprar</a>
+                    </li>
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">Medios de pago</a>
+                    </li>
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">Cambios</a>
+                    </li>
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">Envíos y entrega</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-base-item centrado-lineal">
+                <h2 class="tituloh2 mayuscula fondoOscuro centrado-lineal">categorías</h2>
+                <div class="linea-subrayado justify-center"></div>
+                <ul class="flex-column ul-listado">
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">living</a>
+                    </li>
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">comedor</a>
+                    </li>
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">cocina</a>
+                    </li>
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">dormitorio</a>
+                    </li>
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">oficina</a>
+                    </li>
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">jardin</a>
+                    </li>
+                    <li class="item-menu-footer">
+                        <a href="#" class="link-menu-footer capital">otros</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-base-item centrado-lineal">
+                <h2 class="tituloh2 mayuscula fondoOscuro centrado-lineal">contactanos</h2>
+                <div class="linea-subrayado justify-center"></div>
+                <div class="datos-nosotros">
+                    <span class="span-contactanos">Av. Río Limay 12.</span>
+                    <span class="span-contactanos">E3102QEY</span>
+                    <span class="span-contactanos">San Vicente, Buenos Aires</span>
+                    <span class="span-contactanos">0222 123 456</span>
+                    <span class="span-contactanos">muebleria@broncomuebles.com.ar</span>
+                </div>
+            </div>
+        </div>
+        <section class="centrado-lineal sec-ubicacion">
+            <article>
+                <div class="div-ubicacion">
+                    <iframe class="iframe-ubicacion"
+                        title="ubicacion del negocio"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3267.845903968091!2d-58.436271270995654!3d-35.010562358904245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1727814643198!5m2!1ses!2sar"
+                        width="600"
+                        height="450"
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+        </section>
+    </footer>
+</body>

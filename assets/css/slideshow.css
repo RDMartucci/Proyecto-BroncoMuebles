@@ -1,0 +1,43 @@
+/* Estilos para el contenedor del slideshow */
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 98%;
+    height: 38vh;
+    position: relative;
+    /* top: 0.5vh; */
+    padding: 2vh;
+    margin: auto;
+    /* overflow: hidden; */
+    /* background-color: bisque; */
+
+}
+
+/* Estilos para cada imagen */
+.slide {
+    max-width: 60vw;
+    height: 34vh;
+    position: absolute;
+    margin: auto;
+    animation: slideAnimation 12s infinite;
+    opacity: 0;
+}
+
+/* Animación que muestra cada slide */
+@keyframes slideAnimation {
+    0%, 25% { opacity: 1; }
+    30%, 100% { opacity: 0; }
+}
+
+/* Mostrar cada imagen en momentos distintos por 4 segundos*/
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 4s; }
+.slide:nth-child(3) { animation-delay: 8s; }
+
+@media (min-width:1200px){
+    .slideshow-container{
+        top: 8vh;
+        height: 50vh;
+    }
+}

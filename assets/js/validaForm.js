@@ -40,6 +40,6 @@ formulario.addEventListener('submit', (e) => {
     }
 
     // Si todas las validaciones son correctas
-    alert("Formulario completo. Será enviado...!");
+    alert("Formulario completo enviado.");
     formulario.submit(); // Enviar formulario
 });

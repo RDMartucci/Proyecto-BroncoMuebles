@@ -1,0 +1,144 @@
+.footer-contenedor {
+    font-size: var(--fontsize3);
+    font-family: var(--fuente7);
+    overflow: hidden;
+}
+
+/* generico */
+footer div div h2.tituloh2 {
+    margin-left: 0.5em;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: var(--color7Fondo);
+    color: var(--color1Texto);
+    display: flex;
+    flex-direction: column;
+}
+.news-box{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-newsletter {
+    padding: 0px 4vw;
+    margin: 1em 0.5em;
+    justify-content: space-between;
+}
+
+#input-correo {
+    width: 100%;
+    margin-right: 1em;
+    border-radius: 3em;
+    border: 1px solid var(--color3Fondo);
+    font-size: var(--fontsize2);
+    text-indent: 2vw;
+}
+
+#link-enviar {
+    background-color: var(--color1Texto);
+
+}
+
+.link-newsletter {
+    width: 50%;
+}
+
+/* Redes Sociales */
+.sociales {
+    align-items: center;
+}
+
+.sociales-item {
+    margin: 0.5em;
+    padding: 1em;
+    border-radius: 1em;
+    &:hover {
+        background-color: var(--color1Texto);
+    }
+}
+
+.sociales-link {
+    display: block;
+    text-align: center;
+}
+
+
+.fa-brands {
+    font-size: 2em;
+}
+
+/* ** FOOTER BASE ** */
+.link-menu-footer {
+    color: var(--color1Texto);
+}
+
+.item-menu-footer {
+    padding-top: 1vh;
+}
+
+.footer-base-item {
+    margin: 0.5em;
+    width: 100%;
+}
+
+/* NOSOTROS */
+.ul-listado {
+    margin-top: 1vh;
+    padding: 0 1em;
+}
+
+.datos-nosotros {
+    display: flex;
+    flex-flow: column;
+}
+
+/* *** MEDIA QUERIES *** */
+@media (min-width:575px) {
+    .footer-base {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer-base-item {
+        /* margin: 0.5em; */
+        width: 44vw;
+    }
+}
+
+@media (min-width:900px) {
+    .newsletter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .newsletter-texto{
+        width: 50%;
+    }
+    .news-box {
+        width: 40%;
+    }
+    .news-textoh2{
+        font-size: var(--fontsizeXL);
+    }
+    .news-textoh3{
+        font-size: var(--fontsize1);
+    }
+    .form-newsletter{
+        width: 58%;
+    }
+    .footer-base-item {
+        /* margin: 0.5em; */
+        width: 23vw;
+    }
+}
+
+@media (min-width:1200px){
+    .tituloh2{
+        font-size: var(--fontsizeXL);
+    }
+    .link-menu-footer{
+        font-size: var(--fontsize1);
+    }
+}
