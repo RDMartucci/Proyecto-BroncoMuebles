@@ -15,38 +15,6 @@ ${metas}
 ${estilosFontawesome}
 ${linksHead}`;
 
-
-
-// const headProductos = `
-// <meta charset="UTF-8">
-// <meta name="viewport" content="width=device-width, initial-scale=1.0">
-// <link rel="stylesheet" href="../assets/css/productos.css">
-// <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
-// <link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
-// <link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
-// <link rel="icon" href="../assets/img/logo05.ico">
-// `;
-
-// const headComentarios = `
-// <meta charset="UTF-8">
-// <meta name="viewport" content="width=device-width, initial-scale=1.0">
-// <link rel="stylesheet" href="../assets/css/comentarios.css">
-// <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
-// <link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
-// <link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
-// <link rel="icon" href="../assets/img/logo05.ico">
-// `;
-
-// const headContacto = `
-// <meta charset="UTF-8">
-// <meta name="viewport" content="width=device-width, initial-scale=1.0">
-// <link rel="stylesheet" href="../assets/css/form.css">
-// <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
-// <link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
-// <link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
-// <link rel="icon" href="../assets/img/logo05.ico">
-// `;
-
 //Toma el head de la pagina cargada.
 const head = document.getElementsByTagName('head');
 let headContenido = "";
@@ -67,13 +35,13 @@ if (url.includes('index')) { //Armo el HEAD segun la página cargada.
     `;
     headContenido = headProductos;
 } else if (url.includes('contact')) {
-    const headProductos = `
+    const headContacto = `
         ${estrucHead}
         ${estilosContacto}
     `;
     headContenido = headContacto;
 } else if (url.includes('comentar')) {
-    const headProductos = `
+    const headComentarios = `
         ${estrucHead}
         ${estilosComentario}
     `;
