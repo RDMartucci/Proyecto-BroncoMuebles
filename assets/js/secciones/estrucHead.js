@@ -8,7 +8,7 @@ const headIndex = `
 <link rel="icon" href="./assets/img/logo05.ico">
 `;
 
-const headSitio = `
+const headProductos = `
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="../assets/css/productos.css">
@@ -17,24 +17,51 @@ const headSitio = `
 <link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
 <link rel="icon" href="../assets/img/logo05.ico">
 `;
+
+const headComentarios = `
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../assets/css/comentarios.css">
+<link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
+<link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
+<link rel="icon" href="../assets/img/logo05.ico">
+`;
+
+const headContacto = `
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../assets/css/form.css">
+<link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
+<link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
+<link rel="icon" href="../assets/img/logo05.ico">
+`;
 //Toma el head de la pagina cargada.
 const head = document.getElementsByTagName('head');
-console.log('tomado el elemento head:',head)
-
 let headContenido = "";
 
 //Obtengo la direccion URL y chequeo que contenga la palabra "index".
-if (window.location.pathname.includes("index")) {
-    // Contenido del <head> según la página si es index u otra.
+
+let url = window.location.pathname;
+
+if (url.includes('index')) {
     headContenido = headIndex;
+} else if (url.includes('product')) {
+    headContenido = headProductos;
+} else if (url.includes('contact')) {
+    headContenido = headContacto;
+} else if (url.includes('comentar')) {
+    headContenido = headComentarios;
 } else {
-    headContenido = headSitio;
+    headContenido = headIndex;
 }
-// Reemplazar el contenido del <head>
-document.getElementById("head-auto").innerHTML = headContenido;
+document.getElementById("head-auto").innerHTML = headContenido; // Reemplazar el contenido del <head>
 
+console.log('luego del if...:',headContenido);
+console.log('Path incluye:',url);
 
-// genero elemento TITLE y le asigno el texto con el nombre del sitio.
+// Titulo del sitio: Genero elemento TITLE y le asigno el texto con el nombre del sitio.
 const tituloSitio = document.createElement("title");
 tituloSitio.textContent = "BroncoMuebles";
 
