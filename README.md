@@ -28,7 +28,10 @@ Este sitio web ha sido desarrollado como parte del curso **[Talento Tech]**, que
 ## Herramientas utilizadas:
 - **HTML5:** Para la estructura semantica y contenido del sitio web.
 - **CSS3:** Para el diseño y la presentación visual. Incluidos el menú, slider y cards.
+- **GitHub Pages:** Para alojar el sitio web y hacerlo accesible a todos.
 No se utilizó JavaScript ni framework para mantener la simplicidad del proyecto. 
 
+## Herramientas utilizadas luego de la pre-entrega...
+- **JavaScript:**Se implementa el usa de Javascript para agregar funcionalidad interactiva al sitio web. Manipulación básica del DOM.
 
 ## Practica sobre el trabajo final del curso Talento Tech C24225. ##

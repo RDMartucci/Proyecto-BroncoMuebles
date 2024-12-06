@@ -1,6 +1,6 @@
 @import url('../css/import.css');
 
-input[type=text],
+/* input[type=text],
 input[type=password],
 input[type=email],
 input[type=number],
@@ -38,7 +38,7 @@ form button{
     margin: 4vh 0 2vh 0;
     background-color: var(--color3Boton);
     color: var(--color1Fondo);
-}
+} */
 #comentarios{
     border-radius: 1em;
 }

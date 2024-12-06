@@ -1,0 +1,39 @@
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+textarea,
+select,
+button
+{
+    padding: 0.5em;
+    border: 1px solid var(--color3Texto);
+    border-radius: 6vw;
+    background-color: var(--color1Fondo);
+    transition: all 0.3s ease-in-out;
+}
+input[type=text]:hover,
+input[type=password]:hover,
+input[type=email]:hover,
+input[type=number]:hover,
+textarea:hover,
+select:hover,
+button:hover
+{
+    border: 1px solid var(--color5Texto);
+    box-shadow: 1px 1px 5px var(--color1Texto);
+    transition: all 0.2s ease-in-out;
+}
+input[type=checkbox]{
+    margin-right: 1vw;
+    border: 1px solid var(--color3Texto);
+    border-radius: 6vw;
+    background-color: var(--color1Fondo);
+    transition: all 0.3s ease-in-out;
+}
+
+form button{
+    margin: 4vh 0 2vh 0;
+    background-color: var(--color3Boton);
+    color: var(--color1Fondo);
+}
