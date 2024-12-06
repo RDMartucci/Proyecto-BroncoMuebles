@@ -46,8 +46,6 @@ if (url.includes('index')) { //Armo el HEAD segun la página cargada.
         ${estilosComentario}
     `;
     headContenido = headComentarios;
-} else {
-    headContenido = headIndex;
 }
 document.getElementById("head-auto").innerHTML = headContenido; // Reemplazar el contenido del <head>
 
