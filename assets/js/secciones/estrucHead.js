@@ -5,7 +5,7 @@ const headIndex = `
 <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="./assets/fontawesome/css/brands.css" rel="stylesheet">
 <link href="./assets/fontawesome/css/solid.css" rel="stylesheet">
-<link rel="icon" href="./assets/img/logo05.ico">
+<link rel="icon" href="./assets/img/broncomuebles-logo.png">
 `;
 
 const headProductos = `
@@ -15,7 +15,7 @@ const headProductos = `
 <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
 <link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
-<link rel="icon" href="../assets/img/logo05.ico">
+<link rel="icon" href="../assets/img/broncomuebles-logo.png">
 `;
 
 const headComentarios = `
@@ -25,7 +25,7 @@ const headComentarios = `
 <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
 <link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
-<link rel="icon" href="../assets/img/logo05.ico">
+<link rel="icon" href="../assets/img/broncomuebles-logo.png">
 `;
 
 const headContacto = `
@@ -35,7 +35,7 @@ const headContacto = `
 <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
 <link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
-<link rel="icon" href="../assets/img/logo05.ico">
+<link rel="icon" href="../assets/img/broncomuebles-logo.png">
 `;
 //Toma el head de la pagina cargada.
 const head = document.getElementsByTagName('head');
