@@ -33,5 +33,8 @@ No se utilizó JavaScript ni framework para mantener la simplicidad del proyecto
 
 ## Herramientas utilizadas luego de la pre-entrega...
 - **JavaScript:**Se implementa el usa de Javascript para agregar funcionalidad interactiva al sitio web. Manipulación básica del DOM.
+- Se consume de una API pública (dummyjson) para obtener productos ficticios para la presentación del sitio.
+- Se crea dinamicamante elementos HTML (div's) para mostrar dichos productos en pantalla con formato tipo cards.
+- Carrito de compras usando localStorage para la persistencia de datos.
 
 ## Practica sobre el trabajo final del curso Talento Tech C24225. ##
