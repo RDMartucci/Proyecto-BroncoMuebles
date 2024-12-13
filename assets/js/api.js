@@ -1,3 +1,5 @@
+//Se ejecuta cuando termine de cargar la página.
+document.addEventListener('DOMContentLoaded', ()=>{
 //tomo el elemento padre.
 const divPadreDestacados = document.querySelector('#card-productos-destacados');
 const divPadreOfertas = document.querySelector('#card-productos-ofertas');
@@ -83,9 +85,6 @@ function fetchProductosOfertas(){
     //Atrapo el error en caso de que alla.
     .catch((error)=>console.log('Error de conexión:', error));
 }
-
-
-
  //Función para agregar el producto al carrito.
 function agregarAlCarrito(product){
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
@@ -97,3 +96,5 @@ function agregarAlCarrito(product){
 //Carga inicial de productos.
 fetchProductos()
 fetchProductosOfertas()
+
+})
