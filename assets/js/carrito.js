@@ -17,22 +17,26 @@ document.addEventListener("DOMContentLoaded", () =>
         // Nombre del producto
         const nombreCelda = document.createElement('td');
         nombreCelda.textContent = item.title;
+        nombreCelda.className=' izq-lineal';
         row.appendChild(nombreCelda);
 
         // Precio del producto
         const precioCelda = document.createElement('td');
         precioCelda.textContent = `$${item.price}`;
+        precioCelda.className='der-lineal';
         row.appendChild(precioCelda);
 
         // Cantidad (hardcodeado a 1)
         const cantidadCelda = document.createElement('td');
         cantidadCelda.textContent = 1;
+        cantidadCelda.className='der-lineal';
         row.appendChild(cantidadCelda);
 
         // Subtotal
         const subtotal = item.price; 
         const subtotalCelda = document.createElement('td');
         subtotalCelda.textContent = `$${subtotal}`;
+        subtotalCelda.className='der-lineal';
         row.appendChild(subtotalCelda);
 
         // Agregar fila a la tabla

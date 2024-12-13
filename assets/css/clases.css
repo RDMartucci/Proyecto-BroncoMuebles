@@ -229,7 +229,6 @@
     }
 }
 /* *** */
-/* ** COMENTARIOS EN INDEX ** */
 
 /* *** BANNER OFERTAS - PAGOS *** */
 .banner-ofertas-pagos{
@@ -354,3 +353,21 @@ input[type=text] {
     padding: 0.5em;
     font-size: large;
 }
+
+/* CARRITO */
+.tabla {
+    width: 90%;
+    border-collapse: collapse;
+    border: 1px solid var(--color2Fondo);
+    margin: auto;
+}
+thead {
+    background-color: var(--color3Fondo);
+    color: var(--color4Texto);
+    text-transform: uppercase;
+}
+tr {
+
+}
+
+
