@@ -72,43 +72,51 @@
                     <li><a href="#" class="link-menu-login">Iniciar Sesión</a></li>
                     <li><a href="#" class="link-menu-login">Registrarse</a></li>
                 </ul>
-                <!-- <div class="div-carrito link-menu-login">
+                <div class="div-carrito link-menu-login">
                     <span>
                         <i class="fa-solid fa-shopping-cart"></i>
                     </span>
-                </div> -->
-            </div>
-            <div class="div-carrito link-menu-login">
-                <span>
-                    <i class="fa-solid fa-shopping-cart"></i>
-                </span>
+                </div>
             </div>
         </div>
     </header>
 
-<main class="main-contenedor">
-        <!-- <span class="d-block centrado-lineal">Inicio > Productos</span> -->
-    <span class="d-block titulo-pagina centrado-lineal">Nuestros Productos</span>
+    <main class="main-contenedor">
+        <h1 class="titulo-pagina centrado-lineal">carrito de compras</h1>
+        <h2 class="subtitulo-pagina centrado-lineal">Aqui los productos que has agregado a tu carrito</h2>
+        <section class="carrito-compras">
+            <!-- Carrito de compras -->
+            <!-- <div class="container mt-5"> -->
+                <!-- <h2 class="mb-4">Carrito de Compras</h2> -->
 
-    <section class="sec-productos">
-        <article class="flex-column justify-center productos-destacados">
-            <div class="flex-column  card-contenedor">
-                <h2 class="card-titulo">productos destacados</h2>
-                <div class="card-contenido" id="card-productos-destacados">
+                <table class="tabla">
+                    <thead>
+                        <tr class="centrado-lineal">
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="carrito-items">
+                        <!-- Aquí se cargarán los productos del carrito -->
+                    </tbody>
+                </table>
 
+                <div class="centrado-lineal">
+                    <h3 class="news-textoh3">Total: $<span id="total">0</span></h3>
                 </div>
-            </div>
-            <!-- Paginacion -->
-            <div class="flex-row justify-evenly centrado-lineal">
-                <button id="prev-btn" class="btn btn-secondary">Anterior</button>
-                <span id="page-info"></span>
-                <button id="next-btn" class="btn btn-secondary">Siguiente</button>
-            </div>
-        </article>
-    </section>
-</main>
 
-<footer class="footer-contenedor flex-column justify-center">
+                <div class="flex-row justify-evenly">
+                    <button id="limpiar-carrito" class="btn btn-danger">Volver al Inicio</button>
+                    <button id="finalizar-compra" class="btn btn-success">Finalizar Compra</button>
+                </div>
+            <!-- </div> -->
+        </section>
+
+    </main>
+
+    <footer class="footer-contenedor flex-column justify-center">
         <div class="div-footer-top flex-column">
             <section class="newsletter">
                 <div class="news-box">
@@ -229,8 +237,15 @@
                 </div>
             </article>
         </section>
-</footer>
-<script src="../assets/js/secciones/estrucHead.js"></script>
-<script src="../assets/js/apiProd.js"></script>
-<script src="../assets/js/eventos.js"></script>
+    </footer>
+
+
+
+
+
+    <script src="../assets/js/secciones/estrucHead.js"></script>
+    <script src="../assets/js/carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
+</html>
