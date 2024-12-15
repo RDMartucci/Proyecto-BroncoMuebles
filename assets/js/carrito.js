@@ -10,8 +10,13 @@ document.addEventListener("DOMContentLoaded", () =>
     console.log('---> totalgeneral:',totalgeneral);
     console.log('---> total:',total);
 
+    if (carritoItemsStorage == "") {
+        console.log('Carrito sin items. (vacío)');
+    // Mostrar el total redondeado a 2 decimales.
+        totalgeneral.textContent = `Sin items en el carrito. Total:${total.toFixed(2)}`;
+    } else {
     // Cargar productos en la tabla del carrito
-    carritoItemsStorage.forEach(item => {
+        carritoItemsStorage.forEach(item => {
         const row = document.createElement('tr');
 
         // Nombre del producto
@@ -44,16 +49,18 @@ document.addEventListener("DOMContentLoaded", () =>
 
         // Sumar al total
         total += subtotal;
-    });
-
+    })
     // Mostrar el total redondeado a 2 decimales.
-    totalgeneral.textContent = total.toFixed(2);
+    totalgeneral.textContent = `$ ${total.toFixed(2)}`;
+
+    }
+
 
     // Botón para limpiar el carrito y volver al inicio
     document.getElementById('limpiar-carrito').addEventListener('click', () => 
     {
         localStorage.removeItem('carrito'); 
-        window.location.href = '../index.html'; 
+        window.location.href = './productos.html'; 
     });
 
     // Botón para finalizar la compra con sweet Alert
@@ -71,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () =>
         
         // Redirigir al inicio despues de 4 segundos
         setTimeout(() => {
-        window.location.href = 'index.html'; 
+        window.location.href = './productos.html'; 
         }, 4000);     
     });
-});
+})
