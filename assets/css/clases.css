@@ -355,6 +355,10 @@ input[type=text] {
 }
 
 /* CARRITO */
+
+.div-carrito:hover{
+    cursor:pointer;
+}
 .tabla {
     width: 90%;
     border-collapse: collapse;
