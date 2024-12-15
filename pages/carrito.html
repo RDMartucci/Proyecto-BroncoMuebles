@@ -82,13 +82,11 @@
     </header>
 
     <main class="main-contenedor">
-        <h1 class="titulo-pagina centrado-lineal">carrito de compras</h1>
+        <h1 class="titulo-pagina centrado-lineal capital">carrito de compras</h1>
+        <div class="linea-subrayado justify-center"></div>
         <h2 class="subtitulo-pagina centrado-lineal">Aqui los productos que has agregado a tu carrito</h2>
         <section class="carrito-compras">
             <!-- Carrito de compras -->
-            <!-- <div class="container mt-5"> -->
-                <!-- <h2 class="mb-4">Carrito de Compras</h2> -->
-
                 <table class="tabla">
                     <thead>
                         <tr class="centrado-lineal">
@@ -99,19 +97,17 @@
                         </tr>
                     </thead>
                     <tbody id="carrito-items">
-                        <!-- Aquí se cargarán los productos del carrito -->
+                        <!-- Aquí se cargarán dinámicamente los productos del carrito -->
                     </tbody>
                 </table>
 
                 <div class="centrado-lineal">
-                    <h3 class="news-textoh3">Total: $<span id="total">0</span></h3>
+                    <h3 class="news-textoh3">Total: <span id="total">0</span></h3>
                 </div>
-
                 <div class="flex-row justify-evenly">
-                    <button id="limpiar-carrito" class="btn btn-danger">Volver al Inicio</button>
+                    <button id="limpiar-carrito" class="btn btn-danger">Volver al Inicio / Limpar Carrito</button>
                     <button id="finalizar-compra" class="btn btn-success">Finalizar Compra</button>
-                </div>
-            <!-- </div> -->
+                </div>>
         </section>
 
     </main>

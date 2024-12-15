@@ -178,7 +178,7 @@
 }
 .card-item-img,
 .card-comentario-img{
-    width: 80%;
+    width: 100%;
     margin: auto;
     transition: all 0.5s ease-in-out;
 }
@@ -367,7 +367,13 @@ thead {
     text-transform: uppercase;
 }
 tr {
-
+    border-bottom: 1px solid var(--color2Fondo);
+    font-size: var(--fontsize1);
+    transition: all 0.2s ease-in;
+}
+tr:hover{
+    background-color: var(--color4Fondo);
+    transition: all 0.2s ease-out;
 }
 
 
