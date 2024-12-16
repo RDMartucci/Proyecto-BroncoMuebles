@@ -91,6 +91,7 @@
 .menu-top{
     top: 9vh;
     left: 0;
+    background-color: var(--color4Fondo);
 }
 /* * menu base * */
 .menu-base{
