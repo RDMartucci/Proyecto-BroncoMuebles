@@ -5,11 +5,6 @@ document.addEventListener("DOMContentLoaded", () =>
     const totalgeneral = document.getElementById('total');
     let total = 0;
 
-    console.log('---> carritoItemsStorage:',carritoItemsStorage);
-    console.log('---> carritotablebody:',carritoTableBody);
-    console.log('---> totalgeneral:',totalgeneral);
-    console.log('---> total:',total);
-
     if (carritoItemsStorage == "") {
         console.log('Carrito sin items. (vacío)');
     // Mostrar el total redondeado a 2 decimales.
@@ -68,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () =>
     {
         Swal.fire({
             title: 'Compra Procesada',
-            text: 'Se ha procesado la compra #1200',
+            text: 'Se completó satisfactoriamente tu compra',
             icon: 'success',
             confirmButtonText: 'Aceptar'
         });
