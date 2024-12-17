@@ -1,4 +1,5 @@
-const divCarrito = document.getElementsByClassName('div-carrito')[0];
+// const divCarrito = document.getElementByClassName('div-carrito');
+const divCarrito = document.querySelector('.div-carrito');
 const urlOrigen = window.location.pathname;
 let destino = '';
 
@@ -7,6 +8,8 @@ if (urlOrigen.includes('index')) {
 } else {
     destino = "./carrito.html";
 }
+
+console.log('url:' , destino);
 
 divCarrito.addEventListener('click', ()=>{
     window.location.href = destino;
