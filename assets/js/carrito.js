@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => 
-    {
+document.addEventListener("DOMContentLoaded", () => {
     const carritoItemsStorage = JSON.parse(localStorage.getItem('carrito')) || [];
     const carritoTableBody = document.getElementById('carrito-items');
     const totalgeneral = document.getElementById('total');
@@ -8,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () =>
     if (carritoItemsStorage == "") {
         console.log('Carrito sin items. (vacío)');
     // Mostrar el total redondeado a 2 decimales.
-        totalgeneral.textContent = `Sin items en el carrito. Total:${total.toFixed(2)}`;
+        totalgeneral.textContent = `Sin items en el carrito. ${total.toFixed(2)}`;
     } else {
     // Cargar productos en la tabla del carrito
         carritoItemsStorage.forEach(item => {
@@ -47,9 +46,7 @@ document.addEventListener("DOMContentLoaded", () =>
     })
     // Mostrar el total redondeado a 2 decimales.
     totalgeneral.textContent = `$ ${total.toFixed(2)}`;
-
-    }
-
+}
 
     // Botón para limpiar el carrito y volver al inicio
     document.getElementById('limpiar-carrito').addEventListener('click', () => 

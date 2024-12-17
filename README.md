@@ -18,6 +18,8 @@ Cada uno de nuestros productos es elaborado por artesanos locales, quienes ponen
 ## ¿Cómo empezar?
 
 1. Visita nuestro [sitio web](https://rdmartucci.github.io/Proyecto-BroncoMuebles/). (GitHub Pages)
+-También por [aquí](https://proyecto-bronco-muebles.vercel.app/) (vercel)
+
 2. Explora nuestra colección de muebles artesanales.
 3. Contacta con nosotros para obtener más información o personalizar tu pedido.
 
