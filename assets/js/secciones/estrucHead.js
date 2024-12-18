@@ -43,7 +43,6 @@ const head = document.getElementsByTagName('head')[0];
 let headContenido = "";
 
 //Obtengo la direccion URL y chequeo que contenga la palabra "index".
-
 let url = window.location.pathname;
 
 if (url.includes('index')) {
