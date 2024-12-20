@@ -26,10 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((data) => {
             //aca separa los datos unicamente.
             const productos = data.products;
-            // console.log(data.products);
-
             totalProductos = data.total; //Paginación. -Copiada del profe.
-
             //Limpia el contenedor
             divPadreDestacados.innerHTML = "";
 
