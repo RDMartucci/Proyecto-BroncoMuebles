@@ -67,7 +67,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     carrito.push(product);
     localStorage.setItem("carrito", JSON.stringify(carrito));
-    alert(`${product.title} se ha agregado al carrito!`);
+    Swal.fire({
+      title: 'Producto Agregado',
+      text: 'Se ha agregado el producto al carrito',
+      icon: 'success',
+      confirmButtonText: 'Aceptar'
+    });
   }
 
   prevBtn.addEventListener("click", () => {

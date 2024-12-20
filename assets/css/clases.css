@@ -378,8 +378,30 @@ tr:hover{
     background-color: var(--color4Fondo);
     transition: all 0.2s ease-out;
 }
-
-
+/* Div contenedor de la cantidad, mas y menos*/
+.cantidad-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+/* Botones de menos y más */
+.btn-menos, .btn-mas, .btn-eliminar {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-eliminar {
+    margin-left: 10px;
+}
+.btn-menos:hover, .btn-mas:hover {
+    background-color: #ddd;
+}
+.btn-eliminar:hover{
+    background-color: orange;
+}
 
 
 

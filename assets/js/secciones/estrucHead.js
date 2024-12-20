@@ -6,6 +6,8 @@ const headIndex = `
 <link href="./assets/fontawesome/css/brands.css" rel="stylesheet">
 <link href="./assets/fontawesome/css/solid.css" rel="stylesheet">
 <link rel="icon" href="./assets/img/broncomuebles-logo.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
 `;
 
 const headProductos = `
