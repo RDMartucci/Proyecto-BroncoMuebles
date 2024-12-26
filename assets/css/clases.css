@@ -371,11 +371,12 @@ thead {
 }
 tr {
     border-bottom: 1px solid var(--color2Fondo);
-    font-size: var(--fontsize1);
+    font-size: var(--fontsize2);
+    padding: 0.5em 0;
     transition: all 0.2s ease-in;
 }
 tr:hover{
-    background-color: var(--color4Fondo);
+    background-color: var(--color4tFondo);
     transition: all 0.2s ease-out;
 }
 /* Div contenedor de la cantidad, mas y menos*/
@@ -385,19 +386,43 @@ tr:hover{
     align-items: center;
     gap: 10px;
 }
+.subtotal-container{
+    padding: 0.2em 0.5em;
+}
+
+.botonera{
+    padding: 1em 2em;
+}
 /* Botones de menos y más */
-.btn-menos, .btn-mas, .btn-eliminar {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
+.btn-menos, 
+.btn-mas, 
+.btn-eliminar {
+    background-color: var(--color2Fondo);
+    border: 1px solid var(--color7Texto);
+    padding: 0.5em 1em;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.5em;
+}
+.btn {
+    width: 20vw;
+    padding: 1vh 4vw;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        color: var(--color1Texto);
+        /* transform: scale(1.05); */
+        transition: all 0.5s ease-in-out;
+    }
+}
+.btn:hover{
+    background-color: #ccc;
+}
+
+.btn-menos:hover, .btn-mas:hover {
+    background-color: #ddd;
 }
 .btn-eliminar {
     margin-left: 10px;
-}
-.btn-menos:hover, .btn-mas:hover {
-    background-color: #ddd;
 }
 .btn-eliminar:hover{
     background-color: orange;

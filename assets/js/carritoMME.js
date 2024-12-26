@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
      // Función para actualizar el total del carrito
     const actualizarTotal = () => {
         total = carritoItemsStorage.reduce((acc, item) => acc + (item.price * item.quantity), 0);
-        totalgeneral.textContent = total.toFixed(2);
+        totalgeneral.textContent = `$ ${total.toFixed(2)}`;
 console.log('actualizando el total:',totalgeneral);
     };
 
@@ -18,17 +18,17 @@ console.log('actualizando el total:',totalgeneral);
             const row = document.createElement('tr');
 
             // Nombre del producto
-            const nombreCelda = document.createElement('td');
-            nombreCelda.textContent = item.title;
-            row.appendChild(nombreCelda);
+            const nombreProducto = document.createElement('td');
+            nombreProducto.textContent = item.title;
+            row.appendChild(nombreProducto);
 
             // Precio del producto
-            const precioCelda = document.createElement('td');
-            precioCelda.textContent = `$${item.price}`;
-            row.appendChild(precioCelda);
+            const precioProducto = document.createElement('td');
+            precioProducto.textContent = `$${item.price}`;
+            row.appendChild(precioProducto);
 
             // Cantidad
-            const cantidadCelda = document.createElement('td');
+            const cantidadProducto = document.createElement('td');
             const cantidadContainer = document.createElement('div');
             cantidadContainer.className = "cantidad-container";
 
@@ -44,7 +44,7 @@ console.log('actualizando el total:',totalgeneral);
             });
 
             const spanCantidad = document.createElement('span');
-            spanCantidad.className = 'cantidad';
+            // spanCantidad.className = 'cantidad';
             spanCantidad.textContent = item.quantity;
 
             let btnMas = document.createElement('button');
@@ -59,14 +59,20 @@ console.log('actualizando el total:',totalgeneral);
             cantidadContainer.appendChild(btnMenos);
             cantidadContainer.appendChild(spanCantidad);
             cantidadContainer.appendChild(btnMas);
-            cantidadCelda.appendChild(cantidadContainer);
-            row.appendChild(cantidadCelda);
+            cantidadProducto.appendChild(cantidadContainer);
+            row.appendChild(cantidadProducto);
 
             // Subtotal
             const subtotal = item.price * item.quantity;
-            const subtotalCelda = document.createElement('td');
-            subtotalCelda.textContent = `$${subtotal.toFixed(2)}`;
+            const tdSubtotalProducto = document.createElement('td');
 
+            // Aca iria un div encerrando el subtotal y el btn eliminar para display flex.
+            const subtotalContainer = document.createElement('div');
+            subtotalContainer.className='subtotal-container flex-row justify-spBetween';
+            // subtotalProducto.textContent = `${subtotal.toFixed(2)}`;
+            const spanSubtotal = document.createElement('span');
+            spanSubtotal.textContent = `$${subtotal}`;
+            
             // Botón eliminar
             let btnEliminar = document.createElement('button');
             btnEliminar.className = "btn-eliminar";
@@ -83,8 +89,15 @@ console.log('actualizando el total:',totalgeneral);
                 });
             });
 
-            subtotalCelda.appendChild(btnEliminar);
-            row.appendChild(subtotalCelda);
+            // cantidadContainer.appendChild(btnMenos);
+            // cantidadContainer.appendChild(spanCantidad);
+            // cantidadContainer.appendChild(btnMas);
+            // cantidadProducto.appendChild(cantidadContainer);
+            subtotalContainer.appendChild(spanSubtotal);
+            subtotalContainer.appendChild(btnEliminar);
+
+            tdSubtotalProducto.appendChild(subtotalContainer);
+            row.appendChild(tdSubtotalProducto);
 
             // Agregar fila a la tabla
             carritoTableBody.appendChild(row);
@@ -115,24 +128,35 @@ console.log('actualizando el total:',totalgeneral);
     // Botón para limpiar el carrito y volver al inicio
     document.getElementById('limpiar-carrito').addEventListener('click', () => {
         localStorage.removeItem('carrito');
+        window.location.href = '../index.html';
+    });
+
+    //Boton de continuar con la compra:
+    document.getElementById('continuar-compra').addEventListener('click', () => {
         window.location.href = './productos.html';
     });
 
     // Botón para finalizar la compra
     document.getElementById('finalizar-compra').addEventListener('click', () => {
         Swal.fire({
-            title: 'Compra Procesada',
-            text: 'Se ha procesado la compra #1200',
+            title: 'Compra FInalizada',
+            text: 'Gracias por confiar en nosotros.',
             icon: 'success',
             confirmButtonText: 'Aceptar'
         });
 
         // Limpiar el carrito después de finalizar la compra
         localStorage.removeItem('carrito');
-
+        
         // Redirigir al inicio después de 4 segundos
+        Swal.fire({
+            title: 'Redirigiendo',
+            text: 'Redirigiendo al sitio BroncoMuebles.',
+            icon: 'success',
+            confirmButtonText: 'Aceptar'
+        });
         setTimeout(() => {
-            window.location.href = 'index.html';
+            window.location.href = '../index.html';
         }, 4000);
     });
 });

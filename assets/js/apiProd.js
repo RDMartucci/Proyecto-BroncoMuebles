@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h3 class="card-item-precio centrado-lineal">Precio: ${product.price}</h3>
                 <button class="link-agregar-carrito flex-column centrado-linea">
                     <span class="texto-link-carrito">agregar al carrito
-                    </spanr
+                    </span
                 </button>
             </div>
             `;
@@ -68,10 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
     carrito.push(product);
     localStorage.setItem("carrito", JSON.stringify(carrito));
     Swal.fire({
-      title: 'Producto Agregado',
-      text: 'Se ha agregado el producto al carrito',
-      icon: 'success',
-      confirmButtonText: 'Aceptar'
+       title: 'Producto Agregado',
+       text: `${product.title} -> Se ha agregado el producto al carrito`,
+       icon: 'success',
+       confirmButtonText: 'Aceptar'
     });
   }
 
