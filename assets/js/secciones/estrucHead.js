@@ -62,8 +62,8 @@ if (url.includes('index')) {
 }
 document.getElementById("head-auto").innerHTML = headContenido; // Reemplazar el contenido del <head>
 
-console.log('luego del if...:',headContenido);
-console.log('Path incluye:',url);
+// console.log('luego del if...:',headContenido);
+// console.log('Path incluye:',url);
 
 // Titulo del sitio: Genero elemento TITLE y le asigno el texto con el nombre del sitio.
 const tituloSitio = document.createElement("title");

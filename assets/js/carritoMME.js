@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const actualizarTotal = () => {
         total = carritoItemsStorage.reduce((acc, item) => acc + (item.price * item.quantity), 0);
         totalgeneral.textContent = `$ ${total.toFixed(2)}`;
-console.log('actualizando el total:',totalgeneral);
     };
 
     // Función para renderizar el carrito
@@ -42,9 +41,7 @@ console.log('actualizando el total:',totalgeneral);
                     localStorage.setItem('carrito', JSON.stringify(carritoItemsStorage));
                 }
             });
-
             const spanCantidad = document.createElement('span');
-            // spanCantidad.className = 'cantidad';
             spanCantidad.textContent = item.quantity;
 
             let btnMas = document.createElement('button');
@@ -65,11 +62,9 @@ console.log('actualizando el total:',totalgeneral);
             // Subtotal
             const subtotal = item.price * item.quantity;
             const tdSubtotalProducto = document.createElement('td');
-
             // Aca iria un div encerrando el subtotal y el btn eliminar para display flex.
             const subtotalContainer = document.createElement('div');
             subtotalContainer.className='subtotal-container flex-row justify-spBetween';
-            // subtotalProducto.textContent = `${subtotal.toFixed(2)}`;
             const spanSubtotal = document.createElement('span');
             spanSubtotal.textContent = `$${subtotal}`;
             
@@ -88,11 +83,6 @@ console.log('actualizando el total:',totalgeneral);
                     confirmButtonText: 'Aceptar'
                 });
             });
-
-            // cantidadContainer.appendChild(btnMenos);
-            // cantidadContainer.appendChild(spanCantidad);
-            // cantidadContainer.appendChild(btnMas);
-            // cantidadProducto.appendChild(cantidadContainer);
             subtotalContainer.appendChild(spanSubtotal);
             subtotalContainer.appendChild(btnEliminar);
 
@@ -140,21 +130,13 @@ console.log('actualizando el total:',totalgeneral);
     document.getElementById('finalizar-compra').addEventListener('click', () => {
         Swal.fire({
             title: 'Compra FInalizada',
-            text: 'Gracias por confiar en nosotros.',
+            text: 'Gracias por confiar en nosotros. Redirigiendo al sitio BroncoMueble',
             icon: 'success',
             confirmButtonText: 'Aceptar'
         });
 
         // Limpiar el carrito después de finalizar la compra
         localStorage.removeItem('carrito');
-        
-        // Redirigir al inicio después de 4 segundos
-        Swal.fire({
-            title: 'Redirigiendo',
-            text: 'Redirigiendo al sitio BroncoMuebles.',
-            icon: 'success',
-            confirmButtonText: 'Aceptar'
-        });
         setTimeout(() => {
             window.location.href = '../index.html';
         }, 4000);
