@@ -11,14 +11,8 @@ if (urlOrigen.includes('index')) {
 
 divCarrito.addEventListener('click', ()=> window.location.href = destino)
 
-// if(btnMenos){
-//     btnMenos.addEventListener('click', () => {
-//         if (item.quantity > 1) {
-//             item.quantity -= 1;
-//             renderizarCarrito();
-//             localStorage.setItem('carrito', JSON.stringify(carritoItemsStorage));
-//         }
-//     })
-// } else {
-
-// }
+//Boton buscar
+document.getElementById('icono-busqueda').addEventListener('click',function(){
+    document.querySelector('.form-buscar').classList.toggle('form-buscar-activo');
+    console.log('Se presiono el icono de busqueda');
+});

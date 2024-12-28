@@ -63,6 +63,10 @@
     width: 100%;
 }
 
+.d-block{
+    display: block;
+}
+
 .padd-izq-0{
     padding-left: 0;
 }
@@ -99,6 +103,14 @@
     color: var(--color1Texto);
     margin: 1vw;
 }
+.fas:hover,
+.fa:hover,
+.fa-solid:hover,
+.menu-hamburguesa-icon:hover{
+    color: var(--color5Texto);
+    cursor: pointer;
+}
+
 
 
 /* linea de subrayado */
@@ -108,7 +120,7 @@
     background-color: var(--color3Texto);
 }
 
-.filtros{
+/* .filtros{
     width: 90px;
     height: 30px;
 }
@@ -116,7 +128,7 @@
     border: 1px solid var(--color1Texto);
     margin-top: -2vh;
     margin-bottom: 2vh;
-}
+} */
 
 /* ** UBICACION ** */
 .sec-ubicacion{
@@ -342,13 +354,13 @@
     align-items: center;
     justify-content: center;
 }
-input[type=text] {
+/* input[type=text] {
     padding: 0.5em;
     border: 1px solid var(--color3Texto);
     border-radius: 6vw;
     background-color: var(--color1Fondo);
     transition: all 0.3s ease-in-out;
-}
+} */
 #boton-confirmar{
     padding: 0.5em;
     font-size: large;
@@ -410,12 +422,8 @@ tr:hover{
     transition: all 0.5s ease-in-out;
     &:hover{
         color: var(--color1Texto);
-        /* transform: scale(1.05); */
         transition: all 0.5s ease-in-out;
     }
-}
-.btn:hover{
-    background-color: #ccc;
 }
 
 .btn-menos:hover, .btn-mas:hover {
