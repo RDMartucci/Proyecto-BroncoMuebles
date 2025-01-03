@@ -11,3 +11,5 @@
 # Ignorar archivos de configuración personal
 .env
 .vscode/
+
+.codegpt
