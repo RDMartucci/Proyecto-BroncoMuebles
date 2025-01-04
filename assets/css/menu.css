@@ -164,12 +164,23 @@
 /* LOGIN  */
 .div-login {
     display: inline-flex;
-    justify-content: space-around;
     flex-basis: 25%;
     align-content: center;
     flex-direction: row;
     align-items: center;
 }
+
+.link-menu-login {
+    color: var(--color4Texto);
+    font-size: var(--fontsize2);
+    /* text-align: center; */
+    transition: all 0.3s ease-in-out;
+}
+.link-menu-login:hover {
+    color: var(--color5Texto);
+    transition: all 0.3s ease-in-out;
+}
+
 
 /* header base */
 /* menu principal o menu base */

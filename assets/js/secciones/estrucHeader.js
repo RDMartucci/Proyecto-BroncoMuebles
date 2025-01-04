@@ -1,7 +1,9 @@
 const headerIndex = `
         <div class="logo-contenedor">
             <a href="./index.html" id="logo-link">
-                <img src="./assets/img/broncomuebles-logo.png" alt="logo" id="logo-img">
+                <img src="./assets/img/broncomuebles-logo.png" 
+                alt="logo" 
+                id="logo-img">
             </a>
         </div>
         <div class="menu-hamburguesa">
@@ -56,13 +58,13 @@ const headerIndex = `
                     <i class="fas fa-search"></i>
                 </a>
             </form>
-            <div class="div-login">
+            <div class="div-login justify-around">
                 <i class="fa-solid fa-users-line" id="icono-login"></i>
-                <ul class="menu-login">
-                    <li><a href="#" class="link-menu-login">Iniciar Sesión</a></li>
-                    <li><a href="#" class="link-menu-login">Registrarse</a></li>
+                <ul class="menu-login justify-spBetween centrado-lineal">
+                    <li><a href="#" class="link-menu-login centrado-lineal">Iniciar Sesión</a></li>
+                    <li><a href="#" class="link-menu-login centrado-lineal">Registrarse</a></liclass=>
                 </ul>
-                <div class="div-carrito link-menu-login">
+                <div class="div-carrito link-menu-login centrado-lineal">
                     <span>
                         <i class="fa-solid fa-shopping-cart"></i>
                     </span>
