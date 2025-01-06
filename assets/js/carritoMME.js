@@ -30,16 +30,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    // Función para renderizar el carrito
+    // Función para renderizar el carrito. Arma tabla con los productos seleccionados.
     const renderizarCarrito = () => {
         carritoTableBody.innerHTML = ''; // Limpiar tabla antes de renderizar
         carritoItemsStorage.forEach((item, index) => {
             const row = document.createElement('tr');
+            //-td- de la tabla (celda) para el producto e img.
+            const tdProducto = document.createElement('td');
+            //Contenedor del producto con su imagen ilustrativa.
+            const divProducto = document.createElement('div');
+            divProducto.className = 'producto-container';
+            //Imagen del producto.
+            const imgProducto = document.createElement('img');
+            imgProducto.src = item.thumbnail;
+            //Nombre del producto.
+            const spanNombreProducto = document.createElement('span');
+            spanNombreProducto.textContent = item.title;
 
-            // Nombre del producto
-            const nombreProducto = document.createElement('td');
-            nombreProducto.textContent = item.title;
-            row.appendChild(nombreProducto);
+            divProducto.appendChild(imgProducto);
+            divProducto.appendChild(spanNombreProducto);
+            row.appendChild(divProducto);
 
             // Precio del producto
             const precioProducto = document.createElement('td');

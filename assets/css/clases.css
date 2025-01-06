@@ -120,15 +120,6 @@
     background-color: var(--color3Texto);
 }
 
-/* .filtros{
-    width: 90px;
-    height: 30px;
-}
-.cajita{
-    border: 1px solid var(--color1Texto);
-    margin-top: -2vh;
-    margin-bottom: 2vh;
-} */
 
 /* ** UBICACION ** */
 .sec-ubicacion{
@@ -240,6 +231,9 @@
         transition: all 0.5s ease-in-out;
     }
 }
+/* .fa-cart-plus{
+    color: var(--colorA);
+} */
 /* *** */
 
 /* *** BANNER OFERTAS - PAGOS *** */
@@ -354,13 +348,7 @@
     align-items: center;
     justify-content: center;
 }
-/* input[type=text] {
-    padding: 0.5em;
-    border: 1px solid var(--color3Texto);
-    border-radius: 6vw;
-    background-color: var(--color1Fondo);
-    transition: all 0.3s ease-in-out;
-} */
+
 #boton-confirmar{
     padding: 0.5em;
     font-size: large;
@@ -391,12 +379,21 @@ tr:hover{
     background-color: var(--color4tFondo);
     transition: all 0.2s ease-out;
 }
+/* Img y nombre del producto*/
+.producto-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.producto-container img {
+    width: 5vw;
+    height: 5vh;
+}
 /* Div contenedor de la cantidad, mas y menos*/
 .cantidad-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
 }
 .subtotal-container{
     padding: 0.2em 0.5em;

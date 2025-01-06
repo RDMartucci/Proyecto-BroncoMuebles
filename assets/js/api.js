@@ -30,9 +30,10 @@ function fetchProductos(endpoint,objPadre){
                 <h3 class="card-art-nombre centrado-lineal">${producto.title}</h3>
                 <p class="card-descripcion">${producto.description}.</p>
                 <h3 class="card-item-precio centrado-lineal">Precio: ${producto.price}</h3>
-                <button class="link-agregar-carrito flex-column centrado-linea">
+                <button class="link-agregar-carrito flex-row centrado-lineal">
                     <span class="texto-link-carrito">agregar al carrito</span>
                 </button>
+                <i class='fa fa-cart-plus'style='font-size:48px;color:green'></i>
             </div>
             `;
             //Toma el botón del div creado para poder agregarle un evento.
