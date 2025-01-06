@@ -7,8 +7,28 @@ document.addEventListener("DOMContentLoaded", () => {
      // Función para actualizar el total del carrito
     const actualizarTotal = () => {
         total = carritoItemsStorage.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+        if(total==0){
+            totalgeneral.textContent = 'Sin items en el carrito.';
+        } else {
         totalgeneral.textContent = `$ ${total.toFixed(2)}`;
+        }
     };
+
+    if (carritoItemsStorage == "") {
+        console.log('Carrito sin items. (vacío)');
+        // Mostrar el total redondeado a 2 decimales.
+        totalgeneral.textContent = 'Sin items en el carrito.';
+        console.log(`totalgeneral: ${totalgeneral.textContent}`);
+    } else {
+        // Inicializar la propiedad "quantity" si no existe
+        carritoItemsStorage.forEach(item => {
+            if (!item.quantity) {
+                item.quantity = 1; // Establecer cantidad inicial en 1
+    console.log('cantidad a 1. quantity=1');
+            }
+        });
+
+    }
 
     // Función para renderizar el carrito
     const renderizarCarrito = () => {
@@ -97,20 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
         actualizarTotal();
     };
 
-    if (carritoItemsStorage == "") {
-        console.log('Carrito sin items. (vacío)');
-    // Mostrar el total redondeado a 2 decimales.
-        totalgeneral.textContent = 'Sin items en el carrito.';
-    } else {
-        // Inicializar la propiedad "quantity" si no existe
-        carritoItemsStorage.forEach(item => {
-            if (!item.quantity) {
-                item.quantity = 1; // Establecer cantidad inicial en 1
-    console.log('cantidad a 1. quantity=1');
-            }
-        });
-
-    }
+    
 
     // Inicializar carrito
     renderizarCarrito();
