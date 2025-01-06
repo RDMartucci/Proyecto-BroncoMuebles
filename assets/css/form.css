@@ -59,7 +59,7 @@
         margin: 0 auto;
     }
     #boton-confirmar{
-        padding: 1.5em;
+        padding: 1.5vh 2vw;
         font-size: var(--fontsizeXL);
     }
     #comentario{
