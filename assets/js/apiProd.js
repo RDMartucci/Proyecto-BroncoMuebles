@@ -52,14 +52,14 @@ document.addEventListener("DOMContentLoaded", () => {
           const btnAgregar = divCard.querySelector("button");
           btnAgregar.addEventListener("click", () => agregarAlCarrito(product));
           divPadreDestacados.appendChild(divCard);
-        });
-        // Paginación. -Copiada del profe.
-        pageInfo.textContent = `Página: ${currentPage}`;
-        prevBtn.disabled = currentPage === 1;
-        nextBtn.disabled = currentPage * limit >= totalProductos;
-      })
-      //Atrapo el error en caso de que alla.
-      .catch((error) => console.log("Error de conexión:", error));
+          });
+          // Paginación. -Copiada del profe.
+          pageInfo.textContent = `Página: ${currentPage}`;
+          prevBtn.disabled = currentPage === 1;
+          nextBtn.disabled = currentPage * limit >= totalProductos;
+        })
+        //Atrapo el error en caso de que alla.
+        .catch((error) => console.log("Error de conexión:", error));
   }
 
   //Función para agregar el producto al carrito.
