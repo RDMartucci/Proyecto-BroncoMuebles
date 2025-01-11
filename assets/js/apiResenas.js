@@ -1,59 +1,72 @@
 // Tomo el elemento padre.
-const divPadreComentarios = document.querySelector('#card-comentarios');
-console.log(divPadreComentarios);
+const padreComentarios = document.querySelector('#card-comentarios');
 
-if (!divPadreComentarios) {
-    console.error("El contenedor 'card-comentarios' no se encuentra en el DOM.");
+async function crearCards() {
+  try {
+    // URLs de las APIs
+    const urlUsuarios = 'https://randomuser.me/api/?results=7';
+    const urlComentarios = 'https://dummyjson.com/comments?limit=7';
+
+    // Obtener datos de las APIs
+    const [dataUsuarios, dataComentarios] = await Promise.all([
+      obtenerDatos(urlUsuarios),
+      obtenerDatos(urlComentarios)
+    ]);
+
+    // Extraer arrays de usuarios y comentarios
+    const usuarios = dataUsuarios.results;
+    const comentarios = dataComentarios.comments;
+
+    // Renderizar las cards
+    renderizarCards(usuarios, comentarios, padreComentarios);
+  } catch (error) {
+    console.error('Error al crear las cards:', error);
+  }
 }
 
-// URL de la API
-const urlUsers = 'https://randomuser.me/api/?results=10';
-console.log(urlUsers);
+// Función para renderizar las cards
+function renderizarCards(usuarios, comentarios, contenedor) {
+  if (!contenedor) {
+    console.error('El contenedor no existe');
+    return;
+  }
 
-// Función API
-async function fetchUsers(urlUsers) {
-    try {
-console.log('Entrando al fetch...');
+  let cardsHTML = '';
 
-        const response = await fetch(urlUsers);
-console.log(response);
+  usuarios.forEach((usuario, index) => {
+    const comentario = comentarios[index];
+    cardsHTML += construirCard(usuario, comentario);
+  });
 
-        if (!response.ok) {
-            throw new Error(`Error en la petición HTTP: ${response.status} -> ${response.statusText}`);
-        }
+  contenedor.innerHTML = cardsHTML;
+}
 
-        const data = await response.json();
-        const usuarios = data.results;
-console.log(usuarios);
-
-        // Limpia el contenedor.
-        divPadreComentarios.innerHTML = '';
-console.log('Contenedor limpiado');
-
-        // Crea un elemento para cada usuario.
-        usuarios.forEach(usuario => {
-            const divCardUsuario = document.createElement('div');
-console.log('Crea elemento div - divCardUsuario');
-
-            divCardUsuario.classList.add('card-comentario', 'flex-column');
-console.log(`Asigna clases al div: ${divCardUsuario.classList.length}`);
-
-            // Construye el HTML para cada usuario.
-            divCardUsuario.innerHTML = `
-                <img class="card-comentario-img img-user" src="${usuario.picture.large}" alt="${usuario.name.first}">
-                <h3 class="card-coment-nombre centrado-lineal">${usuario.name.first} ${usuario.name.last}</h3>
-            `;
-console.log(`divCardUsuario: ${divCardUsuario}`);
-
-            divPadreComentarios.appendChild(divCardUsuario);
-        });
-    } catch (error) {
-        console.error('Error de conexión:', error.message);
+// Función para obtener datos de una API
+async function obtenerDatos(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Error al obtener datos de la API: ${url}`);
     }
+    return await response.json();
+  } catch (error) {
+    console.error('Error al obtener datos:', error);
+    throw error;
+  }
 }
 
-// Espera a que el DOM esté completamente cargado.
-document.addEventListener('DOMContentLoaded', () => {
-    fetchUsers(urlUsers);
-});
+// Función para construir una card
+function construirCard(usuario, comentario) {
+  return `
+    <div class="card-comentario flex-column">
+      <img class="card-comentario-img img-user" src="${usuario.picture.large}" alt="${usuario.name.first}">
+      <div class="card-cuerpo justify-center">
+        <p class="card-descripcion texto-comentario">${comentario.body}</p>
+        <p class="texto-comentario">Estrellas: ${comentario.likes}</p>
+      </div>
+    </div>
+  `;
+}
 
+// Llamar a la función principal
+crearCards();
