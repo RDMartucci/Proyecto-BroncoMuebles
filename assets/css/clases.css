@@ -101,7 +101,7 @@
 .fas,
 .fa {
     color: var(--color1Texto);
-    margin: 1vw;
+    margin: 0.5rem;
 }
 .fas:hover,
 .fa:hover,

@@ -1,3 +1,4 @@
+
 // Se ejecuta cuando termine de cargar la página.
 document.addEventListener('DOMContentLoaded', () => {
     // Tomo el elemento padre.
