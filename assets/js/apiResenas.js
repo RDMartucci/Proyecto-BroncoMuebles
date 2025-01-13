@@ -57,16 +57,21 @@ async function obtenerDatos(url) {
 
 // Función para construir una card
 function construirCard(usuario, comentario) {
+  //Variable para imprimir las estrellas segun cantidad de likes.
+  let estrellas ="";
+  for(let i=1; i<=comentario.likes; i++) {
+    estrellas += `<i class="fa fa-star"></i>`;
+  }
   return `
-    <div class="card-comentario flex-column">
+    <div class="card-comentario flex-column justify-center">
       <img class="card-comentario-img img-user" src="${usuario.picture.large}" alt="${usuario.name.first}">
-      <div class="card-cuerpo justify-center">
-        <p class="card-descripcion texto-comentario">${comentario.body}</p>
-        <p class="texto-comentario">Estrellas: ${comentario.likes}</p>
-      </div>
+      <h3 class="centrado-lineal">${usuario.name.last}, ${usuario.name.first}</h3>
+      <div class="estrellas centrado-lineal">${estrellas}</div>
+      <p class="texto-comentario">${comentario.body}</p>
     </div>
   `;
 }
+
 
 // Llamar a la función principal
 crearCards();
