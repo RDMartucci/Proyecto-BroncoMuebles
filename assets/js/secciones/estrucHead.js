@@ -5,7 +5,7 @@ const headIndex = `
 <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="./assets/fontawesome/css/brands.css" rel="stylesheet">
 <link href="./assets/fontawesome/css/solid.css" rel="stylesheet">
-<link rel="icon" href="./assets/img/broncomuebles-logo.png">
+<link rel="icon" href="./assets/img/broncomuebles-logo.ico">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 
 `;
@@ -17,7 +17,7 @@ const headProductos = `
 <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
 <link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
-<link rel="icon" href="../assets/img/broncomuebles-logo.png">
+<link rel="icon" href="../assets/img/broncomuebles-logo.ico">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 `;
 
@@ -28,7 +28,7 @@ const headComentarios = `
 <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
 <link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
-<link rel="icon" href="../assets/img/broncomuebles-logo.png">
+<link rel="icon" href="../assets/img/broncomuebles-logo.ico">
 `;
 
 const headContacto = `
@@ -38,7 +38,7 @@ const headContacto = `
 <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
 <link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
-<link rel="icon" href="../assets/img/broncomuebles-logo.png">
+<link rel="icon" href="../assets/img/broncomuebles-logo.ico">
 `;
 //Toma el head de la pagina cargada.
 const head = document.getElementsByTagName('head')[0];
@@ -61,9 +61,6 @@ if (url.includes('index')) {
     headContenido = headIndex;
 }
 document.getElementById("head-auto").innerHTML = headContenido; // Reemplazar el contenido del <head>
-
-// console.log('luego del if...:',headContenido);
-// console.log('Path incluye:',url);
 
 // Titulo del sitio: Genero elemento TITLE y le asigno el texto con el nombre del sitio.
 const tituloSitio = document.createElement("title");

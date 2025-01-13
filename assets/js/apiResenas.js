@@ -66,7 +66,7 @@ function construirCard(usuario, comentario) {
     <div class="card-comentario flex-column justify-center">
       <img class="card-comentario-img img-user" src="${usuario.picture.large}" alt="${usuario.name.first}">
       <h3 class="centrado-lineal">${usuario.name.last}, ${usuario.name.first}</h3>
-      <div class="estrellas centrado-lineal">${estrellas}</div>
+      <div class="estrellas izq-lineal">${estrellas}</div>
       <p class="texto-comentario">${comentario.body}</p>
     </div>
   `;
